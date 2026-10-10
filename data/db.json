@@ -1,0 +1,24 @@
+{
+  "products": [],
+  "collections": [],
+  "orders": [],
+  "customers": [],
+  "reviews": [],
+  "settings": {
+    "store_open": true,
+    "admin_pin": "0314",
+    "staff_pin": "0314",
+    "cod_enabled": true,
+    "discount_enabled": false,
+    "discount_percent": 0,
+    "discount_code": null,
+    "free_shipping_threshold": 3000,
+    "shipping_fee_flat": 150,
+    "international_shipping_enabled": false,
+    "google_sheets_webhook_url": null,
+    "whatsapp_number": null,
+    "instagram_handle": "allureadorn",
+    "announcement_bar_text": "✨ Worldwide Shipping Available | Free shipping above ₹3000 ✨",
+    "announcement_bar_enabled": true
+  }
+}

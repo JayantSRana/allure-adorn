@@ -9,8 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "#F7F2E8",
+        foreground: "#171717",
+        brand: {
+          ivory: "#F7F2E8",
+          champagne: "#EFE5D4",
+          charcoal: "#171717",
+          burgundy: "#6B1F24",
+          gold: "#B08A4A",
+          blush: "#F8D7D7",
+        },
+      },
+      fontFamily: {
+        serif: ["var(--font-serif)"],
+        sans: ["var(--font-sans)"],
       },
     },
   },
