@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import { useState } from 'react';
 import { useCart } from '@/lib/cart-context';
+import { useWishlist } from '@/lib/wishlist-context';
 
 const MEGA = [
   {
@@ -50,6 +51,7 @@ export default function Header({
   announcement?: string;
 }) {
   const { count, openCart, hydrated } = useCart();
+  const { count: wishCount, hydrated: wishHydrated } = useWishlist();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [megaOpen, setMegaOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -143,8 +145,13 @@ export default function Header({
               <button aria-label="Search" onClick={() => setSearchOpen((s) => !s)} className="hover:text-brand-burgundy">
                 <Search className="h-5 w-5" />
               </button>
-              <Link href="/shop?filter=bestsellers" aria-label="Wishlist" className="hidden hover:text-brand-burgundy sm:block">
+              <Link href="/wishlist" aria-label="Wishlist" className="relative hidden hover:text-brand-burgundy sm:block">
                 <Heart className="h-5 w-5" />
+                {wishHydrated && wishCount > 0 ? (
+                  <span className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-brand-burgundy text-[10px] text-white">
+                    {wishCount}
+                  </span>
+                ) : null}
               </Link>
               <Link href="/track" aria-label="Account & orders" className="hidden hover:text-brand-burgundy sm:block">
                 <User className="h-5 w-5" />

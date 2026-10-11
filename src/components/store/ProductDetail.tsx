@@ -17,6 +17,7 @@ import {
 import { Product } from '@/types';
 import { formatINR, discountPercent } from '@/lib/format';
 import { useCart } from '@/lib/cart-context';
+import { useWishlist } from '@/lib/wishlist-context';
 import { cn } from '@/lib/utils';
 
 function Collapsible({
@@ -49,7 +50,8 @@ export default function ProductDetail({ product }: { product: Product }) {
   const [active, setActive] = useState(0);
   const [size, setSize] = useState(product.size_options[0] ?? '');
   const [qty, setQty] = useState(1);
-  const [wished, setWished] = useState(false);
+  const { has: hasWished, toggle: toggleWished } = useWishlist();
+  const wished = hasWished(product.id);
 
   const off = discountPercent(product.price, product.compare_at_price);
   const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
@@ -209,7 +211,7 @@ export default function ProductDetail({ product }: { product: Product }) {
           </div>
 
           <div className="mt-4 flex items-center gap-4 text-xs">
-            <button onClick={() => setWished((w) => !w)} className="flex items-center gap-2 text-brand-charcoal/70 hover:text-brand-burgundy">
+            <button onClick={() => toggleWished(product.id)} className="flex items-center gap-2 text-brand-charcoal/70 hover:text-brand-burgundy">
               <Heart className={cn('h-4 w-4', wished && 'fill-brand-burgundy text-brand-burgundy')} />
               {wished ? 'Saved' : 'Add to Wishlist'}
             </button>

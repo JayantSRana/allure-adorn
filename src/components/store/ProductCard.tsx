@@ -6,8 +6,8 @@ import { Heart, ShoppingBag } from 'lucide-react';
 import { Product } from '@/types';
 import { formatINR, discountPercent } from '@/lib/format';
 import { useCart } from '@/lib/cart-context';
+import { useWishlist } from '@/lib/wishlist-context';
 import { cn } from '@/lib/utils';
-import { useState } from 'react';
 
 export default function ProductCard({
   product,
@@ -17,7 +17,8 @@ export default function ProductCard({
   className?: string;
 }) {
   const { add, openCart } = useCart();
-  const [wished, setWished] = useState(false);
+  const { has, toggle } = useWishlist();
+  const wished = has(product.id);
   const off = discountPercent(product.price, product.compare_at_price);
   const hover = product.hover_image || product.images[0];
 
@@ -61,8 +62,9 @@ export default function ProductCard({
 
         <button
           type="button"
-          onClick={() => setWished((w) => !w)}
+          onClick={() => toggle(product.id)}
           aria-label={wished ? 'Remove from wishlist' : 'Add to wishlist'}
+          aria-pressed={wished}
           className="absolute right-3 top-3 rounded-full bg-brand-ivory/90 p-2 text-brand-charcoal transition hover:text-brand-burgundy"
         >
           <Heart className={cn('h-4 w-4', wished && 'fill-brand-burgundy text-brand-burgundy')} />

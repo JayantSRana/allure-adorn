@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Star } from 'lucide-react';
 import ProductDetail from '@/components/store/ProductDetail';
 import ProductGrid from '@/components/store/ProductGrid';
+import ReviewForm from '@/components/store/ReviewForm';
 import { SectionHeading, DiamondMotif } from '@/components/store/DiamondMotif';
 import {
   getProductBySlug,
@@ -53,11 +54,11 @@ export default async function ProductPage({ params }: { params: { slug: string }
         product={{ ...product, rating_avg: ratingAvg, rating_count: ratingCount }}
       />
 
-      {/* Reviews — only render when verified reviews exist */}
-      {reviews.length > 0 ? (
-        <section className="border-t border-brand-champagne bg-brand-champagne/20 py-16">
-          <div className="mx-auto max-w-4xl px-4">
-            <SectionHeading title="Loved & Adorned" />
+      {/* Reviews — list verified reviews, and always invite a new one */}
+      <section className="border-t border-brand-champagne bg-brand-champagne/20 py-16">
+        <div className="mx-auto max-w-4xl px-4">
+          <SectionHeading title={reviews.length > 0 ? 'Loved & Adorned' : 'Be the First to Review'} />
+          {reviews.length > 0 ? (
             <div className="mt-8 space-y-6">
               {reviews.map((r) => (
                 <div key={r.id} className="border border-brand-champagne bg-brand-ivory p-6">
@@ -75,9 +76,11 @@ export default async function ProductPage({ params }: { params: { slug: string }
                       </span>
                       <span className="text-sm font-medium">{r.title}</span>
                     </div>
-                    <span className="text-[11px] uppercase tracking-widest text-brand-gold">
-                      Verified Customer
-                    </span>
+                    {r.is_verified_purchase ? (
+                      <span className="text-[11px] uppercase tracking-widest text-brand-gold">
+                        Verified Customer
+                      </span>
+                    ) : null}
                   </div>
                   <p className="mt-3 text-sm text-brand-charcoal/75">{r.body}</p>
                   <p className="mt-3 text-xs text-brand-charcoal/50">
@@ -86,9 +89,17 @@ export default async function ProductPage({ params }: { params: { slug: string }
                 </div>
               ))}
             </div>
+          ) : (
+            <p className="mt-4 text-center text-sm text-brand-charcoal/60">
+              No reviews yet — share your experience with the {product.name}.
+            </p>
+          )}
+
+          <div className="mt-10 flex justify-center">
+            <ReviewForm productId={product.id} productName={product.name} />
           </div>
-        </section>
-      ) : null}
+        </div>
+      </section>
 
       {related.length > 0 ? (
         <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">

@@ -1,6 +1,7 @@
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { CartProvider } from '@/lib/cart-context';
+import { WishlistProvider } from '@/lib/wishlist-context';
 import CartDrawer from '@/components/store/CartDrawer';
 import { ensureDatabase } from '@/lib/db';
 
@@ -24,11 +25,13 @@ export default async function StorefrontLayout({
   }
 
   return (
-    <CartProvider>
-      <Header announcement={announcement} />
-      <main className="min-h-[60vh]">{children}</main>
-      <Footer />
-      <CartDrawer freeShippingThreshold={threshold} />
-    </CartProvider>
+    <WishlistProvider>
+      <CartProvider>
+        <Header announcement={announcement} />
+        <main className="min-h-[60vh]">{children}</main>
+        <Footer />
+        <CartDrawer freeShippingThreshold={threshold} />
+      </CartProvider>
+    </WishlistProvider>
   );
 }
