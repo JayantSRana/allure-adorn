@@ -178,6 +178,7 @@ export default function Header({
                 value={q}
                 onChange={(e) => setQ(e.target.value)}
                 placeholder="Search gold earrings, bangles for wedding, kundan…"
+                aria-label="Search products"
                 className="w-full border border-brand-champagne bg-white px-4 py-2.5 text-sm outline-none focus:border-brand-burgundy"
               />
             </form>

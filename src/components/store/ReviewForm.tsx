@@ -120,6 +120,7 @@ export default function ReviewForm({
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Your name"
+              aria-label="Your name"
               className="border border-brand-champagne bg-white px-4 py-3 text-sm outline-none focus:border-brand-burgundy"
             />
             <input
@@ -127,6 +128,7 @@ export default function ReviewForm({
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               placeholder="Phone (to verify purchase)"
+              aria-label="Phone number"
               className="border border-brand-champagne bg-white px-4 py-3 text-sm outline-none focus:border-brand-burgundy"
             />
           </div>
@@ -134,6 +136,7 @@ export default function ReviewForm({
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             placeholder="Headline (optional)"
+            aria-label="Review headline"
             className="w-full border border-brand-champagne bg-white px-4 py-3 text-sm outline-none focus:border-brand-burgundy"
           />
           <textarea
@@ -142,6 +145,7 @@ export default function ReviewForm({
             value={body}
             onChange={(e) => setBody(e.target.value)}
             placeholder="Tell us what you love about it…"
+            aria-label="Your review"
             className="w-full border border-brand-champagne bg-white px-4 py-3 text-sm outline-none focus:border-brand-burgundy"
           />
 

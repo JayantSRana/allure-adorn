@@ -114,22 +114,22 @@ export default function CheckoutForm({ settings }: { settings: Settings }) {
         <section>
           <h2 className="mb-4 font-serif text-xl">Contact</h2>
           <div className="grid gap-4 sm:grid-cols-2">
-            <input className={inputCls} placeholder="Full name" required value={form.customer_name} onChange={set('customer_name')} />
-            <input className={inputCls} placeholder="Mobile number (10 digits)" required value={form.customer_phone} onChange={set('customer_phone')} inputMode="numeric" />
-            <input className={`${inputCls} sm:col-span-2`} type="email" placeholder="Email address" required value={form.customer_email} onChange={set('customer_email')} />
+            <input className={inputCls} placeholder="Full name" required aria-label="Full name" value={form.customer_name} onChange={set('customer_name')} />
+            <input className={inputCls} placeholder="Mobile number (10 digits)" required aria-label="Mobile number" value={form.customer_phone} onChange={set('customer_phone')} inputMode="numeric" />
+            <input className={`${inputCls} sm:col-span-2`} type="email" placeholder="Email address" required aria-label="Email address" value={form.customer_email} onChange={set('customer_email')} />
           </div>
         </section>
 
         <section>
           <h2 className="mb-4 font-serif text-xl">Delivery Address</h2>
           <div className="grid gap-4 sm:grid-cols-2">
-            <input className={`${inputCls} sm:col-span-2`} placeholder="Address line 1" required value={form.line1} onChange={set('line1')} />
-            <input className={`${inputCls} sm:col-span-2`} placeholder="Address line 2 (optional)" value={form.line2} onChange={set('line2')} />
-            <input className={inputCls} placeholder="City" required value={form.city} onChange={set('city')} />
-            <input className={inputCls} placeholder="State" required value={form.state} onChange={set('state')} />
-            <input className={inputCls} placeholder="PIN code" required value={form.pincode} onChange={set('pincode')} inputMode="numeric" />
-            <input className={inputCls} placeholder="Country" required value={form.country} onChange={set('country')} />
-            <textarea className={`${inputCls} sm:col-span-2`} placeholder="Order notes (optional)" rows={2} value={form.notes} onChange={set('notes')} />
+            <input className={`${inputCls} sm:col-span-2`} placeholder="Address line 1" required aria-label="Address line 1" value={form.line1} onChange={set('line1')} />
+            <input className={`${inputCls} sm:col-span-2`} placeholder="Address line 2 (optional)" aria-label="Address line 2" value={form.line2} onChange={set('line2')} />
+            <input className={inputCls} placeholder="City" required aria-label="City" value={form.city} onChange={set('city')} />
+            <input className={inputCls} placeholder="State" required aria-label="State" value={form.state} onChange={set('state')} />
+            <input className={inputCls} placeholder="PIN code" required aria-label="PIN code" value={form.pincode} onChange={set('pincode')} inputMode="numeric" />
+            <input className={inputCls} placeholder="Country" required aria-label="Country" value={form.country} onChange={set('country')} />
+            <textarea className={`${inputCls} sm:col-span-2`} placeholder="Order notes (optional)" aria-label="Order notes" rows={2} value={form.notes} onChange={set('notes')} />
           </div>
         </section>
 

@@ -30,9 +30,9 @@ npm run start
 3. Sessions last 12h (httpOnly cookie, `allure_admin_auth`)
 
 The portal covers: dashboard/analytics (revenue, COGS, gross profit, margin,
-AOV), orders ledger (filters, fulfil/cancel/refund, notes), products &
-inventory, collections, home-decor, reviews moderation, discounts & fees, and
-settings.
+AOV), orders ledger (filters, fulfil/cancel/refund, notes), an **Inbox** for
+contact enquiries and newsletter subscribers, products & inventory,
+collections, home-decor, reviews moderation, discounts & fees, and settings.
 
 ### Demo data
 
@@ -47,7 +47,8 @@ without faking storefront reviews, open **Admin → Dashboard → “Seed demo o
 | --- | --- |
 | Online payment | Simulated — order is marked `PAID` immediately (no Razorpay keys). COD is real. |
 | Product cost price | Estimated (`price × 0.45`) until real costs are supplied — affects margin reporting only. |
-| Reviews | Storefront shows **only verified/approved** reviews. Reviews are never faked. |
+| Reviews | Customers can submit reviews on any product; each waits for **admin approval** and is auto-labelled "Verified" only when the phone number matches a paid order. The storefront shows approved reviews only — never faked. |
+| Wishlist | Saved in the browser (localStorage) at `/wishlist`; the header heart shows a live count. |
 | Imagery | Real photography curated from the client's own catalogue PDFs. |
 
 ## Sharing the demo
@@ -74,7 +75,7 @@ vercel --prod
 
 - Storefront: `/`, `/shop`, `/bangles`, `/home-decor`,
   `/collections/[slug]`, `/product/[slug]`, `/cart`, `/checkout`,
-  `/order/[orderId]`, `/track`
+  `/order/[orderId]`, `/track`, `/wishlist`
 - CMS pages: `/about`, `/care`, `/contact`, `/shipping`, `/returns`,
   `/privacy`, `/terms`, `/faqs`
 - Admin: `/admin` (PIN-gated)

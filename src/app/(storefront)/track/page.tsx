@@ -83,6 +83,7 @@ export default function TrackPage() {
             value={value}
             onChange={(e) => setValue(e.target.value)}
             placeholder={mode === 'order' ? 'e.g. #AA-261011-0001' : 'e.g. 9876543210'}
+            aria-label={mode === 'order' ? 'Order number' : 'Mobile number'}
             className="flex-1 border border-brand-champagne bg-white px-4 py-3 text-sm outline-none focus:border-brand-burgundy"
           />
           <button

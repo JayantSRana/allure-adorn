@@ -73,6 +73,7 @@ export default function ContactForm() {
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Your name"
+          aria-label="Your name"
           className="border border-brand-champagne bg-white px-4 py-3 text-sm outline-none focus:border-brand-burgundy"
         />
         <input
@@ -80,6 +81,7 @@ export default function ContactForm() {
           value={contact}
           onChange={(e) => setContact(e.target.value)}
           placeholder="Email or phone"
+          aria-label="Email or phone"
           className="border border-brand-champagne bg-white px-4 py-3 text-sm outline-none focus:border-brand-burgundy"
         />
       </div>
@@ -89,6 +91,7 @@ export default function ContactForm() {
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         placeholder="How can we help?"
+        aria-label="Message"
         className="w-full border border-brand-champagne bg-white px-4 py-3 text-sm outline-none focus:border-brand-burgundy"
       />
       {status === 'error' && (
