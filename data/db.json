@@ -1,9 +1,1333 @@
 {
-  "products": [],
-  "collections": [],
+  "products": [
+    {
+      "id": "jwl-001",
+      "slug": "gilded-pearl-drop-earrings",
+      "name": "Gilded Pearl Drop Earrings",
+      "description_short": "Luminous pearl drops framed in antique gold.",
+      "description_long": "A quiet statement. Hand-set freshwater pearls are cradled in a hand-polished antique-gold setting, designed to catch the light as you move. Light enough for all-day wear, refined enough for the aisle.",
+      "category": "EARRINGS",
+      "sub_category": "Drops",
+      "price": 2899,
+      "compare_at_price": 3499,
+      "cost_price": 1180,
+      "images": [
+        "/products/product-1.jpg",
+        "/products/product-6.jpg",
+        "/products/product-10.jpg"
+      ],
+      "hover_image": "/products/product-6.jpg",
+      "material": "Brass with freshwater pearl",
+      "finish": "Antique gold",
+      "colour": "Gold / Ivory",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [],
+      "stock": 42,
+      "is_anti_tarnish": true,
+      "is_new_arrival": true,
+      "is_bestseller": true,
+      "collection_ids": [
+        "col-allure",
+        "col-wedding"
+      ],
+      "tags": [
+        "gold earrings",
+        "pearl",
+        "anti tarnish",
+        "wedding",
+        "drop earrings"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "jwl-002",
+      "slug": "kundan-heritage-necklace",
+      "name": "Kundan Heritage Necklace",
+      "description_short": "Heirloom kundan work for the bridal moment.",
+      "description_long": "Inspired by the kundan traditions of Rajasthan, every stone is set by hand into a gold-tone frame. A piece that carries the weight of occasion without ever feeling heavy.",
+      "category": "NECKLACES",
+      "sub_category": "Statement",
+      "price": 7499,
+      "compare_at_price": 8999,
+      "cost_price": 3100,
+      "images": [
+        "/products/product-2.jpg",
+        "/products/product-7.jpg",
+        "/products/product-11.jpg"
+      ],
+      "hover_image": "/products/product-7.jpg",
+      "material": "Kundan stones, brass base",
+      "finish": "Gold-tone",
+      "colour": "Gold / Pearl",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [],
+      "stock": 18,
+      "is_anti_tarnish": true,
+      "is_new_arrival": false,
+      "is_bestseller": true,
+      "collection_ids": [
+        "col-wedding",
+        "col-festive"
+      ],
+      "tags": [
+        "kundan jewellery",
+        "necklace",
+        "wedding",
+        "bridal",
+        "anti tarnish"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "jwl-003",
+      "slug": "everyday-gold-studs",
+      "name": "Everyday Gold Studs",
+      "description_short": "The stud you never take off.",
+      "description_long": "Understated, featherweight, and built to last. Our anti-tarnish plating keeps them gleaming through workdays, workouts and everything between.",
+      "category": "EARRINGS",
+      "sub_category": "Studs",
+      "price": 1299,
+      "cost_price": 520,
+      "images": [
+        "/products/product-3.jpg",
+        "/products/product-8.jpg"
+      ],
+      "hover_image": "/products/product-8.jpg",
+      "material": "Stainless steel",
+      "finish": "18k gold plated",
+      "colour": "Gold",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [],
+      "stock": 120,
+      "is_anti_tarnish": true,
+      "is_new_arrival": true,
+      "is_bestseller": false,
+      "collection_ids": [
+        "col-everyday"
+      ],
+      "tags": [
+        "gold earrings",
+        "studs",
+        "everyday",
+        "anti tarnish",
+        "minimal"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "jwl-004",
+      "slug": "rosewater-statement-necklace",
+      "name": "Rosewater Statement Necklace",
+      "description_short": "Soft blush enamel, softly luminous gold.",
+      "description_long": "A romantic wash of blush enamel set against matte gold. The kind of piece that turns a simple outfit into a considered one.",
+      "category": "NECKLACES",
+      "sub_category": "Statement",
+      "price": 4599,
+      "cost_price": 1900,
+      "images": [
+        "/products/product-4.jpg",
+        "/products/product-9.jpg",
+        "/products/product-12.jpg"
+      ],
+      "hover_image": "/products/product-9.jpg",
+      "material": "Brass, enamel",
+      "finish": "Matte gold",
+      "colour": "Blush / Gold",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [],
+      "stock": 27,
+      "is_anti_tarnish": true,
+      "is_new_arrival": false,
+      "is_bestseller": false,
+      "collection_ids": [
+        "col-festive",
+        "col-statement"
+      ],
+      "tags": [
+        "necklace",
+        "statement",
+        "blush",
+        "anti tarnish",
+        "festive"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "jwl-005",
+      "slug": "antique-locket-chain",
+      "name": "Antique Locket Chain",
+      "description_short": "A tiny keepsake, worn close.",
+      "description_long": "A delicate locket on a fine chain. Holds what matters most — or simply looks beautiful on its own.",
+      "category": "NECKLACES",
+      "sub_category": "Pendants",
+      "price": 2199,
+      "compare_at_price": 2599,
+      "cost_price": 870,
+      "images": [
+        "/products/product-5.jpg",
+        "/products/product-10.jpg"
+      ],
+      "hover_image": "/products/product-10.jpg",
+      "material": "Brass",
+      "finish": "Antique gold",
+      "colour": "Gold",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [],
+      "stock": 63,
+      "is_anti_tarnish": true,
+      "is_new_arrival": false,
+      "is_bestseller": false,
+      "collection_ids": [
+        "col-everyday",
+        "col-allure"
+      ],
+      "tags": [
+        "necklace",
+        "locket",
+        "antique",
+        "anti tarnish",
+        "everyday"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "jwl-006",
+      "slug": "crystal-halo-stud-earrings",
+      "name": "Crystal Halo Stud Earrings",
+      "description_short": "A ring of light around a single stone.",
+      "description_long": "Precision-set cubic zirconia forms a halo that reads as fine diamond. A modern classic for the modern bride.",
+      "category": "EARRINGS",
+      "sub_category": "Studs",
+      "price": 1899,
+      "cost_price": 720,
+      "images": [
+        "/products/product-6.jpg",
+        "/products/product-1.jpg"
+      ],
+      "hover_image": "/products/product-1.jpg",
+      "material": "Cubic zirconia, brass",
+      "finish": "Rhodium",
+      "colour": "Silver",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [],
+      "stock": 55,
+      "is_anti_tarnish": true,
+      "is_new_arrival": true,
+      "is_bestseller": false,
+      "collection_ids": [
+        "col-wedding"
+      ],
+      "tags": [
+        "earrings",
+        "crystal",
+        "silver",
+        "anti tarnish",
+        "wedding"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "jwl-007",
+      "slug": "gilded-leaf-ring",
+      "name": "Gilded Leaf Ring",
+      "description_short": "A single gilded leaf, wrapped around the finger.",
+      "description_long": "Cast from a real leaf and finished by hand, each ring is ever so slightly unique — exactly as nature intended.",
+      "category": "RINGS",
+      "sub_category": "Statement",
+      "price": 1699,
+      "cost_price": 640,
+      "images": [
+        "/products/product-7.jpg",
+        "/products/product-11.jpg"
+      ],
+      "hover_image": "/products/product-11.jpg",
+      "material": "Brass",
+      "finish": "Antique gold",
+      "colour": "Gold",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "stock": 48,
+      "is_anti_tarnish": true,
+      "is_new_arrival": false,
+      "is_bestseller": false,
+      "collection_ids": [
+        "col-allure"
+      ],
+      "tags": [
+        "ring",
+        "gold",
+        "leaf",
+        "anti tarnish",
+        "statement ring"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "jwl-008",
+      "slug": "layered-coin-necklace",
+      "name": "Layered Coin Necklace",
+      "description_short": "Two chains, one effortless look.",
+      "description_long": "A pre-layered pair that sits perfectly every time. No tangling, no fuss — just the layered look, sorted.",
+      "category": "NECKLACES",
+      "sub_category": "Layered",
+      "price": 3299,
+      "compare_at_price": 3799,
+      "cost_price": 1350,
+      "images": [
+        "/products/product-8.jpg",
+        "/products/product-3.jpg"
+      ],
+      "hover_image": "/products/product-3.jpg",
+      "material": "Stainless steel",
+      "finish": "Gold plated",
+      "colour": "Gold",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [],
+      "stock": 34,
+      "is_anti_tarnish": true,
+      "is_new_arrival": false,
+      "is_bestseller": true,
+      "collection_ids": [
+        "col-everyday",
+        "col-allure"
+      ],
+      "tags": [
+        "necklace",
+        "layered",
+        "coin",
+        "anti tarnish",
+        "everyday"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "jwl-009",
+      "slug": "emerald-teardrop-earrings",
+      "name": "Emerald Teardrop Earrings",
+      "description_short": "Deep emerald, suspended in gold.",
+      "description_long": "A faceted glass emerald catches the light with rare depth. Festive, regal, unforgettable.",
+      "category": "EARRINGS",
+      "sub_category": "Drops",
+      "price": 2699,
+      "cost_price": 1080,
+      "images": [
+        "/products/product-9.jpg",
+        "/products/product-4.jpg"
+      ],
+      "hover_image": "/products/product-4.jpg",
+      "material": "Glass stone, brass",
+      "finish": "Gold-tone",
+      "colour": "Green / Gold",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [],
+      "stock": 31,
+      "is_anti_tarnish": true,
+      "is_new_arrival": false,
+      "is_bestseller": false,
+      "collection_ids": [
+        "col-festive",
+        "col-statement"
+      ],
+      "tags": [
+        "earrings",
+        "emerald",
+        "green",
+        "festive",
+        "anti tarnish"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "jwl-010",
+      "slug": "bridal-pearl-choker",
+      "name": "Bridal Pearl Choker",
+      "description_short": "A row of pearls, set for the ceremony.",
+      "description_long": "Classic pearls, individually knotted, finished with a gold-tone clasp. The bridal piece you keep forever.",
+      "category": "NECKLACES",
+      "sub_category": "Choker",
+      "price": 5799,
+      "compare_at_price": 6799,
+      "cost_price": 2400,
+      "images": [
+        "/products/product-10.jpg",
+        "/products/product-5.jpg",
+        "/products/product-1.jpg"
+      ],
+      "hover_image": "/products/product-5.jpg",
+      "material": "Faux pearls, brass",
+      "finish": "Gold-tone",
+      "colour": "Ivory / Gold",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [],
+      "stock": 14,
+      "is_anti_tarnish": true,
+      "is_new_arrival": false,
+      "is_bestseller": true,
+      "collection_ids": [
+        "col-wedding",
+        "col-bridal"
+      ],
+      "tags": [
+        "necklace",
+        "pearl",
+        "bridal",
+        "choker",
+        "wedding",
+        "anti tarnish"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "jwl-011",
+      "slug": "minimal-signet-ring",
+      "name": "Minimal Signet Ring",
+      "description_short": "Quiet, architectural, yours.",
+      "description_long": "A smooth signet with a brushed finish — substantial in the hand, subtle on the eye.",
+      "category": "RINGS",
+      "sub_category": "Bands",
+      "price": 1499,
+      "cost_price": 560,
+      "images": [
+        "/products/product-11.jpg",
+        "/products/product-7.jpg"
+      ],
+      "hover_image": "/products/product-7.jpg",
+      "material": "Stainless steel",
+      "finish": "Brushed gold",
+      "colour": "Gold",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "stock": 72,
+      "is_anti_tarnish": true,
+      "is_new_arrival": true,
+      "is_bestseller": false,
+      "collection_ids": [
+        "col-everyday"
+      ],
+      "tags": [
+        "ring",
+        "signet",
+        "minimal",
+        "anti tarnish",
+        "everyday"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "jwl-012",
+      "slug": "festive-jhumka-earrings",
+      "name": "Festive Jhumka Earrings",
+      "description_short": "The jhumka, reimagined for today.",
+      "description_long": "Traditional bell silhouette, modern proportions. Light enough to dance in all night.",
+      "category": "EARRINGS",
+      "sub_category": "Jhumkas",
+      "price": 2399,
+      "compare_at_price": 2899,
+      "cost_price": 940,
+      "images": [
+        "/products/product-12.jpg",
+        "/products/product-9.jpg",
+        "/products/product-4.jpg"
+      ],
+      "hover_image": "/products/product-9.jpg",
+      "material": "Brass",
+      "finish": "Antique gold",
+      "colour": "Gold",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [],
+      "stock": 44,
+      "is_anti_tarnish": true,
+      "is_new_arrival": false,
+      "is_bestseller": true,
+      "collection_ids": [
+        "col-festive",
+        "col-wedding"
+      ],
+      "tags": [
+        "earrings",
+        "jhumka",
+        "festive",
+        "wedding",
+        "anti tarnish"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "bng-001",
+      "slug": "glass-bangle-set-of-six",
+      "name": "Glass Bangle Set of Six",
+      "description_short": "Six delicate glass bangles, endlessly stackable.",
+      "description_long": "Traditional glass bangles in a curated palette that layers beautifully with gold or wears alone. Sold as a set of six.",
+      "category": "BANGLES",
+      "sub_category": "Glass",
+      "price": 899,
+      "compare_at_price": 1199,
+      "cost_price": 320,
+      "images": [
+        "/products/product-1.jpg",
+        "/products/product-6.jpg"
+      ],
+      "hover_image": "/products/product-6.jpg",
+      "material": "Glass",
+      "finish": "Glossy",
+      "colour": "Ivory / Burgundy",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [
+        "2.4",
+        "2.6",
+        "2.8"
+      ],
+      "stock": 90,
+      "is_anti_tarnish": true,
+      "is_new_arrival": true,
+      "is_bestseller": false,
+      "collection_ids": [
+        "col-everyday",
+        "col-festive"
+      ],
+      "tags": [
+        "bangles for wedding",
+        "glass bangles",
+        "set",
+        "festive",
+        "anti tarnish"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "bng-002",
+      "slug": "american-diamond-bangle",
+      "name": "American Diamond Bangle",
+      "description_short": "A flash of brilliance for the wrist.",
+      "description_long": "Pavé-set American diamonds wrap a slender frame. The finishing touch on a bridal or evening look.",
+      "category": "BANGLES",
+      "sub_category": "American Diamond",
+      "price": 2199,
+      "compare_at_price": 2699,
+      "cost_price": 880,
+      "images": [
+        "/products/product-2.jpg",
+        "/products/product-7.jpg"
+      ],
+      "hover_image": "/products/product-7.jpg",
+      "material": "Cubic zirconia, brass",
+      "finish": "Rhodium",
+      "colour": "Silver",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [
+        "2.4",
+        "2.6",
+        "2.8"
+      ],
+      "stock": 38,
+      "is_anti_tarnish": true,
+      "is_new_arrival": false,
+      "is_bestseller": true,
+      "collection_ids": [
+        "col-wedding",
+        "col-statement"
+      ],
+      "tags": [
+        "bangles for wedding",
+        "american diamond",
+        "bridal",
+        "anti tarnish"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "bng-003",
+      "slug": "crystal-frost-bangle-set",
+      "name": "Crystal Frost Bangle Set",
+      "description_short": "Frosted crystal, cool and clear.",
+      "description_long": "A set of crystal-studded bangles that brings a cool sparkle to warm ivory and blush outfits.",
+      "category": "BANGLES",
+      "sub_category": "Crystal",
+      "price": 1799,
+      "cost_price": 720,
+      "images": [
+        "/products/product-3.jpg",
+        "/products/product-8.jpg"
+      ],
+      "hover_image": "/products/product-8.jpg",
+      "material": "Crystal, brass",
+      "finish": "Silver-tone",
+      "colour": "Silver / Ivory",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [
+        "2.4",
+        "2.6"
+      ],
+      "stock": 41,
+      "is_anti_tarnish": true,
+      "is_new_arrival": true,
+      "is_bestseller": false,
+      "collection_ids": [
+        "col-wedding",
+        "col-everyday"
+      ],
+      "tags": [
+        "crystal bangles",
+        "set",
+        "wedding",
+        "anti tarnish"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "bng-004",
+      "slug": "velvet-wrap-bangle",
+      "name": "Velvet Wrap Bangle",
+      "description_short": "Burgundy velvet, softly structured.",
+      "description_long": "A single statement bangle wrapped in deep velvet. Tactile, textural, quietly dramatic.",
+      "category": "BANGLES",
+      "sub_category": "Velvet",
+      "price": 1499,
+      "cost_price": 560,
+      "images": [
+        "/products/product-4.jpg",
+        "/products/product-9.jpg"
+      ],
+      "hover_image": "/products/product-9.jpg",
+      "material": "Velvet, brass",
+      "finish": "Matte",
+      "colour": "Burgundy",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [
+        "2.4",
+        "2.6",
+        "2.8"
+      ],
+      "stock": 35,
+      "is_anti_tarnish": true,
+      "is_new_arrival": false,
+      "is_bestseller": false,
+      "collection_ids": [
+        "col-festive",
+        "col-statement"
+      ],
+      "tags": [
+        "velvet bangles",
+        "burgundy",
+        "festive",
+        "statement"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "bng-005",
+      "slug": "antique-metal-kada",
+      "name": "Antique Metal Kada",
+      "description_short": "An heirloom kada, built to be passed down.",
+      "description_long": "Hand-etched antique-gold kada with the weight and warmth of a family heirloom. A single, powerful statement.",
+      "category": "BANGLES",
+      "sub_category": "Metal",
+      "price": 2599,
+      "compare_at_price": 3099,
+      "cost_price": 1020,
+      "images": [
+        "/products/product-5.jpg",
+        "/products/product-10.jpg"
+      ],
+      "hover_image": "/products/product-10.jpg",
+      "material": "Brass",
+      "finish": "Antique gold",
+      "colour": "Gold",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [
+        "2.6",
+        "2.8"
+      ],
+      "stock": 22,
+      "is_anti_tarnish": true,
+      "is_new_arrival": false,
+      "is_bestseller": true,
+      "collection_ids": [
+        "col-statement",
+        "col-wedding"
+      ],
+      "tags": [
+        "metal kada",
+        "bangle",
+        "antique",
+        "wedding",
+        "anti tarnish"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "bng-006",
+      "slug": "resin-marble-bangle",
+      "name": "Resin Marble Bangle",
+      "description_short": "Marble-veined resin, impossibly light.",
+      "description_long": "A featherlight bangle with a marble finish — the everyday piece you will reach for again and again.",
+      "category": "BANGLES",
+      "sub_category": "Resin",
+      "price": 999,
+      "cost_price": 360,
+      "images": [
+        "/products/product-6.jpg",
+        "/products/product-11.jpg"
+      ],
+      "hover_image": "/products/product-11.jpg",
+      "material": "Resin",
+      "finish": "Glossy",
+      "colour": "Ivory / Gold fleck",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [
+        "2.4",
+        "2.6",
+        "2.8"
+      ],
+      "stock": 60,
+      "is_anti_tarnish": false,
+      "is_new_arrival": true,
+      "is_bestseller": false,
+      "collection_ids": [
+        "col-everyday"
+      ],
+      "tags": [
+        "resin bangles",
+        "marble",
+        "everyday",
+        "minimal"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "bng-007",
+      "slug": "gold-stack-bangle-trio",
+      "name": "Gold Stack Bangle Trio",
+      "description_short": "Three thin bangles, made to be stacked.",
+      "description_long": "A trio of fine gold-plated bangles designed to layer, mix and live in. Anti-tarnish so they stay golden.",
+      "category": "BANGLES",
+      "sub_category": "Metal",
+      "price": 2899,
+      "compare_at_price": 3399,
+      "cost_price": 1150,
+      "images": [
+        "/products/product-7.jpg",
+        "/products/product-12.jpg"
+      ],
+      "hover_image": "/products/product-12.jpg",
+      "material": "Stainless steel",
+      "finish": "18k gold plated",
+      "colour": "Gold",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [
+        "2.4",
+        "2.6",
+        "2.8"
+      ],
+      "stock": 40,
+      "is_anti_tarnish": true,
+      "is_new_arrival": false,
+      "is_bestseller": true,
+      "collection_ids": [
+        "col-everyday",
+        "col-allure"
+      ],
+      "tags": [
+        "gold bangles",
+        "stack",
+        "set",
+        "anti tarnish",
+        "everyday"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "bng-008",
+      "slug": "festive-chooda-set",
+      "name": "Festive Chooda Set",
+      "description_short": "A festive set, ready to celebrate.",
+      "description_long": "A coordinated set of gold-tone bangles in a festive palette. Designed to be given, worn and remembered.",
+      "category": "BANGLES",
+      "sub_category": "Festive Sets",
+      "price": 1999,
+      "compare_at_price": 2499,
+      "cost_price": 780,
+      "images": [
+        "/products/product-8.jpg",
+        "/products/product-1.jpg",
+        "/products/product-6.jpg"
+      ],
+      "hover_image": "/products/product-1.jpg",
+      "material": "Brass, lac",
+      "finish": "Gold-tone",
+      "colour": "Crimson / Gold",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [
+        "2.4",
+        "2.6",
+        "2.8"
+      ],
+      "stock": 52,
+      "is_anti_tarnish": true,
+      "is_new_arrival": true,
+      "is_bestseller": false,
+      "collection_ids": [
+        "col-festive",
+        "col-wedding"
+      ],
+      "tags": [
+        "bangles for wedding",
+        "chooda",
+        "festive",
+        "bridal",
+        "anti tarnish"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "hmd-001",
+      "slug": "amber-blush-candle",
+      "name": "Amber & Blush Candle",
+      "description_short": "Amber, vanilla and a whisper of rose.",
+      "description_long": "Hand-poured soy wax in a reusable blush ceramic vessel. Around 45 hours of warm, enveloping burn time.",
+      "category": "CANDLES",
+      "sub_category": "Scented",
+      "price": 1299,
+      "compare_at_price": 1599,
+      "cost_price": 480,
+      "images": [
+        "/products/product-9.jpg",
+        "/products/product-13.jpg"
+      ],
+      "hover_image": "/products/product-13.jpg",
+      "material": "Soy wax, ceramic vessel",
+      "finish": "Matte",
+      "colour": "Blush",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [],
+      "stock": 80,
+      "is_anti_tarnish": false,
+      "is_new_arrival": true,
+      "is_bestseller": true,
+      "collection_ids": [
+        "col-home"
+      ],
+      "tags": [
+        "candle",
+        "scented",
+        "home decor",
+        "gift",
+        "amber"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z",
+      "dimensions": "8cm × 8cm",
+      "weight": 320,
+      "fragile": true,
+      "room_type": "LIVING"
+    },
+    {
+      "id": "hmd-002",
+      "slug": "sculpted-ivory-vase",
+      "name": "Sculpted Ivory Vase",
+      "description_short": "A quiet sculptural form for fresh stems.",
+      "description_long": "Hand-thrown stoneware with an organic, softened silhouette. Beautiful with flowers, arresting on its own.",
+      "category": "VASES",
+      "sub_category": "Ceramic",
+      "price": 2299,
+      "cost_price": 890,
+      "images": [
+        "/products/product-10.jpg",
+        "/products/product-1.jpg"
+      ],
+      "hover_image": "/products/product-1.jpg",
+      "material": "Stoneware ceramic",
+      "finish": "Satin",
+      "colour": "Ivory",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [],
+      "stock": 26,
+      "is_anti_tarnish": false,
+      "is_new_arrival": false,
+      "is_bestseller": true,
+      "collection_ids": [
+        "col-home"
+      ],
+      "tags": [
+        "vase",
+        "home decor",
+        "ceramic",
+        "ivory",
+        "minimal"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z",
+      "dimensions": "22cm × 10cm",
+      "weight": 900,
+      "fragile": true,
+      "room_type": "DINING"
+    },
+    {
+      "id": "hmd-003",
+      "slug": "gilded-line-wall-art",
+      "name": "Gilded Line Wall Art",
+      "description_short": "A single gilded line, framed in oak.",
+      "description_long": "Minimal abstract line work with a hand-applied gold foil accent. Ships ready to hang.",
+      "category": "WALL_ART",
+      "sub_category": "Framed",
+      "price": 3499,
+      "compare_at_price": 3999,
+      "cost_price": 1350,
+      "images": [
+        "/products/product-11.jpg",
+        "/products/product-2.jpg"
+      ],
+      "hover_image": "/products/product-2.jpg",
+      "material": "Canvas, wood frame",
+      "finish": "Foil detail",
+      "colour": "Ivory / Gold",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [],
+      "stock": 19,
+      "is_anti_tarnish": false,
+      "is_new_arrival": true,
+      "is_bestseller": false,
+      "collection_ids": [
+        "col-home",
+        "col-allure"
+      ],
+      "tags": [
+        "wall art",
+        "home decor",
+        "gold",
+        "framed",
+        "gift"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z",
+      "dimensions": "50cm × 70cm",
+      "weight": 1600,
+      "fragile": true,
+      "room_type": "BEDROOM"
+    },
+    {
+      "id": "hmd-004",
+      "slug": "champagne-tablescape-set",
+      "name": "Champagne Tablescape Set",
+      "description_short": "Set a table worth lingering at.",
+      "description_long": "A curated stack of matte-glaze stoneware — plates, bowls and a serving piece — in warm champagne.",
+      "category": "TABLESCAPE",
+      "sub_category": "Dining",
+      "price": 4999,
+      "compare_at_price": 5999,
+      "cost_price": 1900,
+      "images": [
+        "/products/product-12.jpg",
+        "/products/product-3.jpg"
+      ],
+      "hover_image": "/products/product-3.jpg",
+      "material": "Stoneware",
+      "finish": "Matte glaze",
+      "colour": "Champagne",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [],
+      "stock": 12,
+      "is_anti_tarnish": false,
+      "is_new_arrival": false,
+      "is_bestseller": true,
+      "collection_ids": [
+        "col-home"
+      ],
+      "tags": [
+        "tablescape",
+        "dinnerware",
+        "home decor",
+        "hosting",
+        "gift"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z",
+      "dimensions": "Set of 8",
+      "weight": 5200,
+      "fragile": true,
+      "room_type": "DINING"
+    },
+    {
+      "id": "hmd-005",
+      "slug": "brass-arc-bookend",
+      "name": "Brass Arc Bookend",
+      "description_short": "An arc of polished brass for your shelf.",
+      "description_long": "Solid brass, weighted and hand-polished. Functional sculpture for the modern shelf.",
+      "category": "WALL_ART",
+      "sub_category": "Sculptural",
+      "price": 1899,
+      "cost_price": 700,
+      "images": [
+        "/products/product-13.jpg",
+        "/products/product-5.jpg"
+      ],
+      "hover_image": "/products/product-5.jpg",
+      "material": "Solid brass",
+      "finish": "Polished",
+      "colour": "Antique gold",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [],
+      "stock": 30,
+      "is_anti_tarnish": false,
+      "is_new_arrival": true,
+      "is_bestseller": false,
+      "collection_ids": [
+        "col-home",
+        "col-allure"
+      ],
+      "tags": [
+        "bookend",
+        "home decor",
+        "brass",
+        "gold",
+        "office"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z",
+      "dimensions": "12cm × 12cm",
+      "weight": 1100,
+      "fragile": false,
+      "room_type": "OFFICE"
+    },
+    {
+      "id": "hmd-006",
+      "slug": "ivory-pillar-candle-trio",
+      "name": "Ivory Pillar Candle Trio",
+      "description_short": "Three sculptural pillars for the table.",
+      "description_long": "A trio of textured pillar candles in graduated heights. Striking unlit; warm and beautiful lit.",
+      "category": "CANDLES",
+      "sub_category": "Decorative",
+      "price": 1499,
+      "cost_price": 560,
+      "images": [
+        "/products/product-1.jpg",
+        "/products/product-4.jpg"
+      ],
+      "hover_image": "/products/product-4.jpg",
+      "material": "Paraffin-free wax",
+      "finish": "Textured",
+      "colour": "Ivory",
+      "care_instructions": "Keep away from perfume, water and chemicals. Store separately in the pouch provided. Wipe gently with a soft dry cloth.",
+      "size_options": [],
+      "stock": 48,
+      "is_anti_tarnish": false,
+      "is_new_arrival": false,
+      "is_bestseller": false,
+      "collection_ids": [
+        "col-home",
+        "col-everyday"
+      ],
+      "tags": [
+        "candles",
+        "home decor",
+        "ivory",
+        "gift",
+        "dining"
+      ],
+      "rating_avg": 0,
+      "rating_count": 0,
+      "is_active": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z",
+      "dimensions": "15 / 20 / 25cm",
+      "weight": 1200,
+      "fragile": true,
+      "room_type": "LIVING"
+    }
+  ],
+  "collections": [
+    {
+      "id": "col-allure",
+      "name": "The Allure Edit",
+      "description": "Our signature edit — the pieces we reach for most. Timeless, layerable and quietly luxurious.",
+      "hero_image": "/editorial/editorial-2.jpg",
+      "product_ids": [
+        "jwl-001",
+        "jwl-005",
+        "jwl-007",
+        "jwl-008",
+        "bng-007",
+        "hmd-003",
+        "hmd-005"
+      ],
+      "season": "All Year",
+      "is_featured": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "col-wedding",
+      "name": "The Wedding Edit",
+      "description": "For the aisle and everything after. Kundan, pearls and crystal, chosen for the moment you will remember forever.",
+      "hero_image": "/editorial/editorial-23.jpg",
+      "product_ids": [
+        "jwl-001",
+        "jwl-002",
+        "jwl-006",
+        "jwl-010",
+        "jwl-012",
+        "bng-002",
+        "bng-003",
+        "bng-005",
+        "bng-008"
+      ],
+      "season": "Wedding",
+      "is_featured": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "col-festive",
+      "name": "Festive Edit",
+      "description": "Gold, jhumkas and colour — dressed for celebration.",
+      "hero_image": "/editorial/editorial-13.jpg",
+      "product_ids": [
+        "jwl-002",
+        "jwl-004",
+        "jwl-009",
+        "jwl-012",
+        "bng-001",
+        "bng-004",
+        "bng-008"
+      ],
+      "season": "Festive",
+      "is_featured": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "col-everyday",
+      "name": "Everyday Allure",
+      "description": "Anti-tarnish, featherweight, made to be worn every single day.",
+      "hero_image": "/editorial/editorial-5.jpg",
+      "product_ids": [
+        "jwl-003",
+        "jwl-005",
+        "jwl-008",
+        "jwl-011",
+        "bng-001",
+        "bng-003",
+        "bng-006",
+        "bng-007",
+        "hmd-006"
+      ],
+      "season": "Everyday",
+      "is_featured": false,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "col-bridal",
+      "name": "Bridal Edit",
+      "description": "The complete bridal story, piece by piece.",
+      "hero_image": "/editorial/editorial-30.jpg",
+      "product_ids": [
+        "jwl-010"
+      ],
+      "season": "Bridal",
+      "is_featured": false,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "col-statement",
+      "name": "Statement Edit",
+      "description": "For the days that call for a little more.",
+      "hero_image": "/editorial/editorial-17.jpg",
+      "product_ids": [
+        "jwl-004",
+        "jwl-009",
+        "bng-002",
+        "bng-004",
+        "bng-005"
+      ],
+      "season": "Occasion",
+      "is_featured": false,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "col-home",
+      "name": "Adorn Your Space",
+      "description": "Home decor to make a house feel considered — candles, vases, art and tablescapes.",
+      "hero_image": "/editorial/editorial-41.jpg",
+      "product_ids": [
+        "hmd-001",
+        "hmd-002",
+        "hmd-003",
+        "hmd-004",
+        "hmd-005",
+        "hmd-006"
+      ],
+      "season": "Home",
+      "is_featured": true,
+      "created_at": "2026-10-11T09:12:49.261Z",
+      "updated_at": "2026-10-11T09:12:49.261Z"
+    }
+  ],
   "orders": [],
   "customers": [],
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "rev-001",
+      "product_id": "jwl-001",
+      "customer_name": "Ananya R.",
+      "customer_phone": "9812345670",
+      "rating": 5,
+      "title": "Even prettier in person",
+      "body": "Wore these for my sister’s sangeet and got so many compliments. Light enough that I forgot I had them on.",
+      "images": [],
+      "is_verified_purchase": false,
+      "is_approved": false,
+      "created_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "rev-002",
+      "product_id": "jwl-002",
+      "customer_name": "Meera K.",
+      "customer_phone": "9823456781",
+      "rating": 5,
+      "title": "Perfect bridal piece",
+      "body": "The kundan work is so neat and it sat beautifully with my lehenga. Felt heirloom quality.",
+      "images": [],
+      "is_verified_purchase": false,
+      "is_approved": false,
+      "created_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "rev-003",
+      "product_id": "bng-007",
+      "customer_name": "Divya S.",
+      "customer_phone": "9834567892",
+      "rating": 4,
+      "title": "Great everyday stack",
+      "body": "Been wearing them daily for a month, no tarnish at all. Wish the set came with a fourth.",
+      "images": [],
+      "is_verified_purchase": false,
+      "is_approved": false,
+      "created_at": "2026-10-11T09:12:49.261Z"
+    },
+    {
+      "id": "rev-004",
+      "product_id": "hmd-001",
+      "customer_name": "Ritika M.",
+      "customer_phone": "9845678903",
+      "rating": 5,
+      "title": "My favourite candle",
+      "body": "Smells warm and expensive without being overpowering. The vessel is gorgeous too.",
+      "images": [],
+      "is_verified_purchase": false,
+      "is_approved": false,
+      "created_at": "2026-10-11T09:12:49.261Z"
+    }
+  ],
   "settings": {
     "store_open": true,
     "admin_pin": "0314",
@@ -11,14 +1335,11 @@
     "cod_enabled": true,
     "discount_enabled": false,
     "discount_percent": 0,
-    "discount_code": null,
     "free_shipping_threshold": 3000,
     "shipping_fee_flat": 150,
-    "international_shipping_enabled": false,
-    "google_sheets_webhook_url": null,
-    "whatsapp_number": null,
+    "international_shipping_enabled": true,
     "instagram_handle": "allureadorn",
-    "announcement_bar_text": "✨ Worldwide Shipping Available | Free shipping above ₹3000 ✨",
+    "announcement_bar_text": "✨ Worldwide Shipping Available | Free Shipping Above ₹3000 ✨",
     "announcement_bar_enabled": true
   }
 }

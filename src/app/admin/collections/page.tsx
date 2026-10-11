@@ -1,9 +1,18 @@
-export default function Page() {
+import { AdminPageHeader } from '@/components/admin/ui';
+import CollectionsManager from '@/components/admin/CollectionsManager';
+import { ensureDatabase } from '@/lib/db';
+
+export const dynamic = 'force-dynamic';
+
+export default async function AdminCollectionsPage() {
+  const db = await ensureDatabase();
   return (
-    <main className="min-h-screen bg-brand-ivory py-16">
-      <div className="max-w-7xl mx-auto px-4">
-        <h1 className="text-4xl font-light">Admin - Coming Soon</h1>
-      </div>
-    </main>
+    <div>
+      <AdminPageHeader
+        title="Collections Manager"
+        subtitle="Curate seasonal edits, assign products and choose what leads the homepage."
+      />
+      <CollectionsManager collections={db.collections} products={db.products} />
+    </div>
   );
 }

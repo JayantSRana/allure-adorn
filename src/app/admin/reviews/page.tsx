@@ -1,9 +1,18 @@
-export default function Page() {
+import { AdminPageHeader } from '@/components/admin/ui';
+import ReviewsManager from '@/components/admin/ReviewsManager';
+import { ensureDatabase } from '@/lib/db';
+
+export const dynamic = 'force-dynamic';
+
+export default async function AdminReviewsPage() {
+  const db = await ensureDatabase();
   return (
-    <main className="min-h-screen bg-brand-ivory py-16">
-      <div className="max-w-7xl mx-auto px-4">
-        <h1 className="text-4xl font-light">Admin - Coming Soon</h1>
-      </div>
-    </main>
+    <div>
+      <AdminPageHeader
+        title="Reviews Moderation"
+        subtitle="Approve genuine reviews, auto-verify against paid orders, and remove spam."
+      />
+      <ReviewsManager reviews={db.reviews} products={db.products} />
+    </div>
   );
 }

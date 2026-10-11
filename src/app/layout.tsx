@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
 
 const serif = Cormorant_Garamond({
   subsets: ["latin"],
@@ -18,25 +16,18 @@ const sans = DM_Sans({
 
 export const metadata: Metadata = {
   title: "Allure Adorn | Luxury Jewellery & Home Decor",
-  description: "Elegance crafted to adorn your story",
-  icons: {
-    icon: '/logo/WhatsApp Image 2026-10-02 at 7.59.56 PM.jpeg',
-  },
+  description:
+    "Adornment, made to be remembered. Timeless jewellery and home decor, crafted with quiet luxury.",
+  icons: { icon: "/logo/logo.jpeg" },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body
-        className={`${serif.variable} ${sans.variable} antialiased`}
-      >
-        <Header />
+      <body className={`${serif.variable} ${sans.variable} antialiased`}>
         {children}
-        <Footer />
       </body>
     </html>
   );

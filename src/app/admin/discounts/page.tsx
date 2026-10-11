@@ -1,9 +1,33 @@
-export default function Page() {
+import { AdminPageHeader } from '@/components/admin/ui';
+import SettingsForm from '@/components/admin/SettingsForm';
+import { ensureDatabase } from '@/lib/db';
+
+export const dynamic = 'force-dynamic';
+
+const FIELDS = [
+  'store_open',
+  'cod_enabled',
+  'discount_enabled',
+  'discount_percent',
+  'discount_code',
+  'free_shipping_threshold',
+  'shipping_fee_flat',
+  'international_shipping_enabled',
+] as const;
+
+export default async function AdminDiscountsPage() {
+  const db = await ensureDatabase();
   return (
-    <main className="min-h-screen bg-brand-ivory py-16">
-      <div className="max-w-7xl mx-auto px-4">
-        <h1 className="text-4xl font-light">Admin - Coming Soon</h1>
-      </div>
-    </main>
+    <div>
+      <AdminPageHeader
+        title="Discounts & Fees"
+        subtitle="Launch discounts, shipping thresholds, delivery fees and payment options."
+      />
+      <SettingsForm
+        initial={db.settings}
+        fields={[...FIELDS]}
+        title="Discounts, Shipping & Fees"
+      />
+    </div>
   );
 }

@@ -1,9 +1,22 @@
-export default function Page() {
+import { AdminPageHeader } from '@/components/admin/ui';
+import ProductsManager from '@/components/admin/ProductsManager';
+import { ensureDatabase } from '@/lib/db';
+
+export const dynamic = 'force-dynamic';
+
+export default async function AdminHomeDecorPage() {
+  const db = await ensureDatabase();
   return (
-    <main className="min-h-screen bg-brand-ivory py-16">
-      <div className="max-w-7xl mx-auto px-4">
-        <h1 className="text-4xl font-light">Admin - Coming Soon</h1>
-      </div>
-    </main>
+    <div>
+      <AdminPageHeader
+        title="Home Decor Manager"
+        subtitle="Candles, vases, wall art and tablescape pieces, with room and fragility details."
+      />
+      <ProductsManager
+        products={db.products}
+        collections={db.collections}
+        scope="home-decor"
+      />
+    </div>
   );
 }
