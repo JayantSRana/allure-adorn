@@ -209,9 +209,11 @@ export default function Header({
               { href: '/shop', label: 'Shop' },
               { href: '/bangles', label: 'Bangles' },
               { href: '/home-decor', label: 'Home Decor' },
+              { href: '/wishlist', label: 'Wishlist' },
               { href: '/track', label: 'Track Order' },
               { href: '/about', label: 'About' },
               { href: '/contact', label: 'Contact' },
+              { href: '/faqs', label: 'FAQs' },
             ].map((l) => (
               <Link
                 key={l.href}
