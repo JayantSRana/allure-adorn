@@ -2,6 +2,11 @@ import CheckoutForm from './CheckoutForm';
 import { DiamondMotif } from '@/components/store/DiamondMotif';
 import { ensureDatabase } from '@/lib/db';
 
+export const metadata = {
+  title: 'Checkout | Allure Adorn',
+  robots: { index: false, follow: false },
+};
+
 export const dynamic = 'force-dynamic';
 
 export default async function CheckoutPage() {

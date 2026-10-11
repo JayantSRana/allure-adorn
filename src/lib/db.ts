@@ -31,6 +31,8 @@ export function freshDatabase(): Database {
     orders: [],
     customers: [],
     reviews: JSON.parse(JSON.stringify(SEED_REVIEWS)),
+    messages: [],
+    subscribers: [],
     settings: { ...DEFAULT_SETTINGS },
   };
 }
@@ -103,6 +105,11 @@ function readLocal(): Database | null {
     const raw = fs.readFileSync(DB_PATH, 'utf8');
     const parsed = JSON.parse(raw) as Database;
     if (!parsed.products || parsed.products.length === 0) return null;
+    // Normalise optional collections added after the first release so older
+    // database files keep working without a manual reset.
+    if (!Array.isArray(parsed.messages)) parsed.messages = [];
+    if (!Array.isArray(parsed.subscribers)) parsed.subscribers = [];
+    if (!Array.isArray(parsed.customers)) parsed.customers = [];
     return parsed;
   } catch {
     return null;

@@ -15,10 +15,35 @@ const sans = DM_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+  ),
   title: "Allure Adorn | Luxury Jewellery & Home Decor",
   description:
     "Adornment, made to be remembered. Timeless jewellery and home decor, crafted with quiet luxury.",
-  icons: { icon: "/logo/logo.jpeg" },
+  applicationName: "Allure Adorn",
+  keywords: [
+    "Allure Adorn",
+    "luxury jewellery",
+    "anti-tarnish jewellery",
+    "bangles",
+    "home decor",
+    "gift jewellery",
+  ],
+  openGraph: {
+    type: "website",
+    siteName: "Allure Adorn",
+    title: "Allure Adorn | Luxury Jewellery & Home Decor",
+    description:
+      "Adornment, made to be remembered. Timeless jewellery and home decor, crafted with quiet luxury.",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Allure Adorn | Luxury Jewellery & Home Decor",
+    description:
+      "Adornment, made to be remembered. Timeless jewellery and home decor, crafted with quiet luxury.",
+  },
 };
 
 export default function RootLayout({

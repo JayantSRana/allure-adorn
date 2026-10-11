@@ -189,11 +189,30 @@ export interface SystemSettings {
   announcement_bar_enabled: boolean;
 }
 
+export interface ContactMessage {
+  id: string;
+  name: string;
+  email?: string;
+  phone?: string;
+  message: string;
+  is_handled: boolean;
+  created_at: string;
+}
+
+export interface Subscriber {
+  id: string;
+  email: string;
+  source: string;
+  created_at: string;
+}
+
 export interface Database {
   products: Product[];
   collections: Collection[];
   orders: Order[];
   customers: Customer[];
   reviews: Review[];
+  messages: ContactMessage[];
+  subscribers: Subscriber[];
   settings: SystemSettings;
 }

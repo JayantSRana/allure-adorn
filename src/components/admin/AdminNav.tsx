@@ -13,6 +13,7 @@ import {
   Settings,
   LogOut,
   ExternalLink,
+  Inbox,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { logoutAdmin } from '@/app/admin/actions';
@@ -20,6 +21,7 @@ import { logoutAdmin } from '@/app/admin/actions';
 const NAV = [
   { href: '/admin', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/admin/orders', label: 'Orders', icon: Receipt },
+  { href: '/admin/inbox', label: 'Inbox', icon: Inbox },
   { href: '/admin/products', label: 'Products', icon: Gem },
   { href: '/admin/collections', label: 'Collections', icon: FolderOpen },
   { href: '/admin/home-decor', label: 'Home Decor', icon: Sofa },

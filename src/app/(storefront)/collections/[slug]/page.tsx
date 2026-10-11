@@ -12,6 +12,28 @@ import {
 
 export const dynamic = 'force-dynamic';
 
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}) {
+  const collection = await getCollectionBySlug(params.slug);
+  if (!collection) return { title: 'Collection | Allure Adorn' };
+  return {
+    title: `${collection.name} | Allure Adorn`,
+    description:
+      collection.description ||
+      `Explore the ${collection.name} collection from Allure Adorn.`,
+    openGraph: {
+      title: `${collection.name} | Allure Adorn`,
+      description:
+        collection.description ||
+        `Explore the ${collection.name} collection from Allure Adorn.`,
+      images: [collection.hero_image],
+    },
+  };
+}
+
 export default async function CollectionPage({
   params,
 }: {

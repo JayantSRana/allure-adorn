@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import HeroSlideshow from '@/components/store/HeroSlideshow';
 import ProductGrid from '@/components/store/ProductGrid';
+import NewsletterForm from '@/components/store/NewsletterForm';
 import { SectionHeading, DiamondMotif } from '@/components/store/DiamondMotif';
 import {
   getNewArrivals,
@@ -211,12 +212,7 @@ export default async function Home() {
       {/* Newsletter */}
       <section className="mx-auto max-w-3xl px-4 py-20 text-center">
         <SectionHeading title="A Little More Allure" subtitle="Occasional notes on new arrivals, styling and private offers. No noise." />
-        <form className="mx-auto mt-8 flex max-w-md flex-col gap-3 sm:flex-row">
-          <input type="email" placeholder="Your email address" className="flex-1 border border-brand-champagne bg-white px-4 py-3 text-sm outline-none focus:border-brand-burgundy" />
-          <button type="submit" className="bg-brand-burgundy px-8 py-3 text-xs tracking-widest text-white hover:bg-brand-charcoal">
-            JOIN THE ALLURE LIST
-          </button>
-        </form>
+        <NewsletterForm />
       </section>
     </div>
   );

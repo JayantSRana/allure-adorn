@@ -3,6 +3,12 @@ import ProductGrid from '@/components/store/ProductGrid';
 import { DiamondMotif } from '@/components/store/DiamondMotif';
 import { getProductsByCategory } from '@/lib/store';
 
+export const metadata = {
+  title: 'Bangles | Allure Adorn',
+  description:
+    'Glass, American diamond, crystal and velvet bangles in sizes 2.4, 2.6 and 2.8.',
+};
+
 export const dynamic = 'force-dynamic';
 
 const SUB = [

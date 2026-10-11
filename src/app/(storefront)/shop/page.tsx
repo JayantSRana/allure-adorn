@@ -8,6 +8,12 @@ import {
 import { CATEGORY_LABELS } from '@/lib/format';
 import { Product, ProductCategory } from '@/types';
 
+export const metadata = {
+  title: 'Shop All | Allure Adorn',
+  description:
+    'Browse our full collection of anti-tarnish jewellery, bangles and home decor — crafted with quiet luxury.',
+};
+
 export const dynamic = 'force-dynamic';
 
 const CATEGORY_TABS: { label: string; href: string }[] = [

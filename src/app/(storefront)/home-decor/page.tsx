@@ -2,6 +2,12 @@ import ProductGrid from '@/components/store/ProductGrid';
 import { SectionHeading } from '@/components/store/DiamondMotif';
 import { getProductsByCategories } from '@/lib/store';
 
+export const metadata = {
+  title: 'Home Decor | Allure Adorn',
+  description:
+    'Candles, vases, wall art and tablescape pieces to style your home with quiet luxury.',
+};
+
 export const dynamic = 'force-dynamic';
 
 export default async function HomeDecorPage() {

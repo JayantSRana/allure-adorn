@@ -1,5 +1,6 @@
 import { MessageCircle, Mail, MapPin } from 'lucide-react';
 import { DiamondMotif } from '@/components/store/DiamondMotif';
+import ContactForm from '@/components/store/ContactForm';
 
 export const metadata = { title: 'Contact | Allure Adorn' };
 
@@ -34,16 +35,7 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <form className="mx-auto mt-12 max-w-2xl space-y-4">
-          <div className="grid gap-4 sm:grid-cols-2">
-            <input placeholder="Your name" className="border border-brand-champagne bg-white px-4 py-3 text-sm outline-none focus:border-brand-burgundy" />
-            <input placeholder="Email or phone" className="border border-brand-champagne bg-white px-4 py-3 text-sm outline-none focus:border-brand-burgundy" />
-          </div>
-          <textarea rows={5} placeholder="How can we help?" className="w-full border border-brand-champagne bg-white px-4 py-3 text-sm outline-none focus:border-brand-burgundy" />
-          <button type="submit" className="w-full bg-brand-burgundy py-3.5 text-xs tracking-widest text-white hover:bg-brand-charcoal">
-            SEND MESSAGE
-          </button>
-        </form>
+        <ContactForm />
       </div>
     </div>
   );

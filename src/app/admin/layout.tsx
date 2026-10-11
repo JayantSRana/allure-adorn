@@ -4,7 +4,10 @@ import { isAdminAuthed } from '@/lib/admin-auth';
 
 export const dynamic = 'force-dynamic';
 
-export const metadata = { title: 'Admin | Allure Adorn' };
+export const metadata = {
+  title: 'Admin | Allure Adorn',
+  robots: { index: false, follow: false },
+};
 
 export default function AdminLayout({
   children,
