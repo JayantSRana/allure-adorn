@@ -1,4 +1,11 @@
 import { Database, SystemSettings } from '@/types';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const DB_PATH = path.join(__dirname, '../../data/db.json');
 
 const DEFAULT_SETTINGS: SystemSettings = {
   store_open: true,
@@ -28,11 +35,27 @@ const DEFAULT_DB: Database = {
 };
 
 export async function ensureDatabase(): Promise<Database> {
+  try {
+    if (fs.existsSync(DB_PATH)) {
+      const raw = fs.readFileSync(DB_PATH, 'utf8');
+      const parsed = JSON.parse(raw) as Database;
+      return parsed;
+    }
+  } catch {
+    // ignore and return default
+  }
+  await writeDatabase(DEFAULT_DB);
   return DEFAULT_DB;
 }
 
-export async function writeDatabase(_db: Database): Promise<void> {
-  void _db;
-  // In production, this would sync to Redis/KV with atomic locking
-  // For now, just a no-op stub - actual implementation would write to data/db.json
+export async function writeDatabase(db: Database): Promise<void> {
+  try {
+    const dir = path.dirname(DB_PATH);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+    fs.writeFileSync(DB_PATH, JSON.stringify(db, null, 2), 'utf8');
+  } catch {
+    // ignore
+  }
 }
