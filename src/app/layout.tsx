@@ -17,6 +17,9 @@ const sans = DM_Sans({
 export const metadata: Metadata = {
   title: "Allure Adorn | Luxury Jewellery & Home Decor",
   description: "Elegance crafted to adorn your story",
+  icons: {
+    icon: '/logo/WhatsApp Image 2026-10-02 at 7.59.56 PM.jpeg',
+  },
 };
 
 export default function RootLayout({
