@@ -40,8 +40,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "jwl-002",
@@ -83,8 +83,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "jwl-003",
@@ -123,8 +123,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "jwl-004",
@@ -165,8 +165,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "jwl-005",
@@ -207,8 +207,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "jwl-006",
@@ -247,8 +247,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "jwl-007",
@@ -293,8 +293,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "jwl-008",
@@ -335,8 +335,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "jwl-009",
@@ -376,8 +376,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "jwl-010",
@@ -420,8 +420,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "jwl-011",
@@ -466,8 +466,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "jwl-012",
@@ -509,8 +509,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "bng-001",
@@ -524,10 +524,11 @@
       "compare_at_price": 1199,
       "cost_price": 320,
       "images": [
+        "/products/product-13.jpg",
         "/products/product-1.jpg",
         "/products/product-6.jpg"
       ],
-      "hover_image": "/products/product-6.jpg",
+      "hover_image": "/products/product-1.jpg",
       "material": "Glass",
       "finish": "Glossy",
       "colour": "Ivory / Burgundy",
@@ -555,8 +556,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "bng-002",
@@ -570,10 +571,11 @@
       "compare_at_price": 2699,
       "cost_price": 880,
       "images": [
+        "/products/product-14.jpg",
         "/products/product-2.jpg",
         "/products/product-7.jpg"
       ],
-      "hover_image": "/products/product-7.jpg",
+      "hover_image": "/products/product-2.jpg",
       "material": "Cubic zirconia, brass",
       "finish": "Rhodium",
       "colour": "Silver",
@@ -600,8 +602,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "bng-003",
@@ -614,10 +616,11 @@
       "price": 1799,
       "cost_price": 720,
       "images": [
+        "/products/product-15.jpg",
         "/products/product-3.jpg",
         "/products/product-8.jpg"
       ],
-      "hover_image": "/products/product-8.jpg",
+      "hover_image": "/products/product-3.jpg",
       "material": "Crystal, brass",
       "finish": "Silver-tone",
       "colour": "Silver / Ivory",
@@ -643,8 +646,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "bng-004",
@@ -657,10 +660,11 @@
       "price": 1499,
       "cost_price": 560,
       "images": [
+        "/products/product-16.jpg",
         "/products/product-4.jpg",
         "/products/product-9.jpg"
       ],
-      "hover_image": "/products/product-9.jpg",
+      "hover_image": "/products/product-4.jpg",
       "material": "Velvet, brass",
       "finish": "Matte",
       "colour": "Burgundy",
@@ -687,8 +691,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "bng-005",
@@ -702,10 +706,11 @@
       "compare_at_price": 3099,
       "cost_price": 1020,
       "images": [
+        "/products/product-17.jpg",
         "/products/product-5.jpg",
         "/products/product-10.jpg"
       ],
-      "hover_image": "/products/product-10.jpg",
+      "hover_image": "/products/product-5.jpg",
       "material": "Brass",
       "finish": "Antique gold",
       "colour": "Gold",
@@ -732,8 +737,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "bng-006",
@@ -746,10 +751,11 @@
       "price": 999,
       "cost_price": 360,
       "images": [
+        "/products/product-18.jpg",
         "/products/product-6.jpg",
         "/products/product-11.jpg"
       ],
-      "hover_image": "/products/product-11.jpg",
+      "hover_image": "/products/product-6.jpg",
       "material": "Resin",
       "finish": "Glossy",
       "colour": "Ivory / Gold fleck",
@@ -775,8 +781,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "bng-007",
@@ -790,10 +796,11 @@
       "compare_at_price": 3399,
       "cost_price": 1150,
       "images": [
+        "/products/product-19.jpg",
         "/products/product-7.jpg",
         "/products/product-12.jpg"
       ],
-      "hover_image": "/products/product-12.jpg",
+      "hover_image": "/products/product-7.jpg",
       "material": "Stainless steel",
       "finish": "18k gold plated",
       "colour": "Gold",
@@ -821,8 +828,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "bng-008",
@@ -836,11 +843,11 @@
       "compare_at_price": 2499,
       "cost_price": 780,
       "images": [
+        "/products/product-20.jpg",
         "/products/product-8.jpg",
-        "/products/product-1.jpg",
-        "/products/product-6.jpg"
+        "/products/product-1.jpg"
       ],
-      "hover_image": "/products/product-1.jpg",
+      "hover_image": "/products/product-8.jpg",
       "material": "Brass, lac",
       "finish": "Gold-tone",
       "colour": "Crimson / Gold",
@@ -868,8 +875,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "hmd-001",
@@ -883,10 +890,11 @@
       "compare_at_price": 1599,
       "cost_price": 480,
       "images": [
+        "/products/product-21.jpg",
         "/products/product-9.jpg",
         "/products/product-13.jpg"
       ],
-      "hover_image": "/products/product-13.jpg",
+      "hover_image": "/products/product-9.jpg",
       "material": "Soy wax, ceramic vessel",
       "finish": "Matte",
       "colour": "Blush",
@@ -909,8 +917,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z",
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z",
       "dimensions": "8cm × 8cm",
       "weight": 320,
       "fragile": true,
@@ -927,10 +935,11 @@
       "price": 2299,
       "cost_price": 890,
       "images": [
+        "/products/product-22.jpg",
         "/products/product-10.jpg",
         "/products/product-1.jpg"
       ],
-      "hover_image": "/products/product-1.jpg",
+      "hover_image": "/products/product-10.jpg",
       "material": "Stoneware ceramic",
       "finish": "Satin",
       "colour": "Ivory",
@@ -953,8 +962,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z",
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z",
       "dimensions": "22cm × 10cm",
       "weight": 900,
       "fragile": true,
@@ -972,10 +981,11 @@
       "compare_at_price": 3999,
       "cost_price": 1350,
       "images": [
+        "/products/product-23.jpg",
         "/products/product-11.jpg",
         "/products/product-2.jpg"
       ],
-      "hover_image": "/products/product-2.jpg",
+      "hover_image": "/products/product-11.jpg",
       "material": "Canvas, wood frame",
       "finish": "Foil detail",
       "colour": "Ivory / Gold",
@@ -999,8 +1009,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z",
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z",
       "dimensions": "50cm × 70cm",
       "weight": 1600,
       "fragile": true,
@@ -1018,10 +1028,11 @@
       "compare_at_price": 5999,
       "cost_price": 1900,
       "images": [
+        "/products/product-24.jpg",
         "/products/product-12.jpg",
         "/products/product-3.jpg"
       ],
-      "hover_image": "/products/product-3.jpg",
+      "hover_image": "/products/product-12.jpg",
       "material": "Stoneware",
       "finish": "Matte glaze",
       "colour": "Champagne",
@@ -1044,8 +1055,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z",
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z",
       "dimensions": "Set of 8",
       "weight": 5200,
       "fragile": true,
@@ -1062,10 +1073,11 @@
       "price": 1899,
       "cost_price": 700,
       "images": [
+        "/products/product-25.jpg",
         "/products/product-13.jpg",
         "/products/product-5.jpg"
       ],
-      "hover_image": "/products/product-5.jpg",
+      "hover_image": "/products/product-13.jpg",
       "material": "Solid brass",
       "finish": "Polished",
       "colour": "Antique gold",
@@ -1089,8 +1101,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z",
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z",
       "dimensions": "12cm × 12cm",
       "weight": 1100,
       "fragile": false,
@@ -1107,10 +1119,11 @@
       "price": 1499,
       "cost_price": 560,
       "images": [
+        "/products/product-26.jpg",
         "/products/product-1.jpg",
         "/products/product-4.jpg"
       ],
-      "hover_image": "/products/product-4.jpg",
+      "hover_image": "/products/product-1.jpg",
       "material": "Paraffin-free wax",
       "finish": "Textured",
       "colour": "Ivory",
@@ -1134,8 +1147,8 @@
       "rating_avg": 0,
       "rating_count": 0,
       "is_active": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z",
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z",
       "dimensions": "15 / 20 / 25cm",
       "weight": 1200,
       "fragile": true,
@@ -1159,8 +1172,8 @@
       ],
       "season": "All Year",
       "is_featured": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "col-wedding",
@@ -1180,8 +1193,8 @@
       ],
       "season": "Wedding",
       "is_featured": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "col-festive",
@@ -1199,8 +1212,8 @@
       ],
       "season": "Festive",
       "is_featured": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "col-everyday",
@@ -1220,8 +1233,8 @@
       ],
       "season": "Everyday",
       "is_featured": false,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "col-bridal",
@@ -1233,8 +1246,8 @@
       ],
       "season": "Bridal",
       "is_featured": false,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "col-statement",
@@ -1250,8 +1263,8 @@
       ],
       "season": "Occasion",
       "is_featured": false,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "col-home",
@@ -1268,8 +1281,8 @@
       ],
       "season": "Home",
       "is_featured": true,
-      "created_at": "2026-10-11T09:12:49.261Z",
-      "updated_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z",
+      "updated_at": "2026-10-11T11:17:28.899Z"
     }
   ],
   "orders": [],
@@ -1286,7 +1299,7 @@
       "images": [],
       "is_verified_purchase": false,
       "is_approved": false,
-      "created_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "rev-002",
@@ -1299,7 +1312,7 @@
       "images": [],
       "is_verified_purchase": false,
       "is_approved": false,
-      "created_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "rev-003",
@@ -1312,7 +1325,7 @@
       "images": [],
       "is_verified_purchase": false,
       "is_approved": false,
-      "created_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z"
     },
     {
       "id": "rev-004",
@@ -1325,7 +1338,7 @@
       "images": [],
       "is_verified_purchase": false,
       "is_approved": false,
-      "created_at": "2026-10-11T09:12:49.261Z"
+      "created_at": "2026-10-11T11:17:28.899Z"
     }
   ],
   "settings": {

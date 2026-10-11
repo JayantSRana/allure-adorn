@@ -105,11 +105,25 @@ const HOME_DECOR: SeedInput[] = [
   { slug: 'ivory-pillar-candle-trio', name: 'Ivory Pillar Candle Trio', category: 'CANDLES', sub_category: 'Decorative', price: 1499, cost_price: 560, imgs: [1, 4], material: 'Paraffin-free wax', finish: 'Textured', colour: 'Ivory', sizes: [], stock: 48, collections: ['col-home', 'col-everyday'], tags: ['candles', 'home decor', 'ivory', 'gift', 'dining'], short: 'Three sculptural pillars for the table.', long: 'A trio of textured pillar candles in graduated heights. Striking unlit; warm and beautiful lit.', dimensions: '15 / 20 / 25cm', weight: 1200, fragile: true, room_type: 'LIVING' },
 ];
 
-export const SEED_PRODUCTS: Product[] = [
+/**
+ * Gives every product its own distinct primary image (product-1..26) so the
+ * catalogue grid never repeats a hero shot, while keeping the secondary
+ * gallery images from the hand-authored seed data.
+ */
+function withUniquePrimary(items: Product[]): Product[] {
+  return items.map((p, i) => {
+    const primary = P(i + 1);
+    const gallery = p.images.filter((img) => img !== primary);
+    const images = [primary, ...gallery].slice(0, 3);
+    return { ...p, images, hover_image: images[1] ?? primary };
+  });
+}
+
+export const SEED_PRODUCTS: Product[] = withUniquePrimary([
   ...build(JEWELLERY, 'jwl'),
   ...build(BANGLES, 'bng'),
   ...build(HOME_DECOR, 'hmd'),
-];
+]);
 
 export const SEED_COLLECTIONS: Collection[] = [
   { id: 'col-allure', name: 'The Allure Edit', description: 'Our signature edit — the pieces we reach for most. Timeless, layerable and quietly luxurious.', hero_image: E(2), product_ids: SEED_PRODUCTS.filter(p => p.collection_ids.includes('col-allure')).map(p => p.id), season: 'All Year', is_featured: true, created_at: now, updated_at: now },
