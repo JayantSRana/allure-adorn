@@ -3,7 +3,7 @@
 import { useMemo, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-import { Plus, Search, Pencil, Trash2, AlertTriangle, X } from 'lucide-react';
+import { Plus, Search, Pencil, Trash2, AlertTriangle, X, Upload } from 'lucide-react';
 import { Product, Collection, ProductCategory, RoomType } from '@/types';
 import { formatINR, CATEGORY_LABELS } from '@/lib/format';
 import { StatusBadge } from '@/components/admin/ui';
@@ -48,6 +48,43 @@ export default function ProductsManager({
   const [lowOnly, setLowOnly] = useState(false);
   const [editing, setEditing] = useState<Partial<Product> | null>(null);
   const [busy, setBusy] = useState(false);
+  const [uploading, setUploading] = useState<string | null>(null);
+
+  const uploadImage = async (file: File): Promise<string | null> => {
+    setUploading(file.name);
+    try {
+      const formData = new FormData();
+      formData.append('file', file);
+      const res = await fetch('/api/admin/products/upload', {
+        method: 'POST',
+        body: formData,
+      });
+      const data = await res.json();
+      if (res.ok && data.path) return data.path;
+      alert(data.error || 'Upload failed');
+      return null;
+    } catch {
+      alert('Upload failed');
+      return null;
+    } finally {
+      setUploading(null);
+    }
+  };
+
+  const handleImageUpload = (field: keyof Product) => {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = 'image/*';
+    input.onchange = async () => {
+      const file = input.files?.[0];
+      if (!file) return;
+      const path = await uploadImage(file);
+      if (path && editing) {
+        setEditing({ ...editing, [field]: path });
+      }
+    };
+    input.click();
+  };
 
   const scoped = useMemo(() => {
     const cats = scope === 'home-decor'
@@ -261,6 +298,8 @@ export default function ProductsManager({
           onChange={setEditing}
           onClose={() => setEditing(null)}
           onSave={save}
+          uploading={uploading}
+          onUpload={handleImageUpload}
         />
       ) : null}
     </>
@@ -275,6 +314,8 @@ function ProductModal({
   onChange,
   onClose,
   onSave,
+  uploading,
+  onUpload,
 }: {
   draft: Partial<Product>;
   collections: Collection[];
@@ -283,6 +324,8 @@ function ProductModal({
   onChange: (p: Partial<Product>) => void;
   onClose: () => void;
   onSave: (p: Partial<Product>) => void;
+  uploading: string | null;
+  onUpload: (field: keyof Product) => void;
 }) {
   const set = (key: keyof Product, value: unknown) => onChange({ ...draft, [key]: value });
   const listValue = (arr?: string[]) => (arr ?? []).join(', ');
@@ -345,12 +388,28 @@ function ProductModal({
           </div>
 
           <div className="sm:col-span-2">
-            <label className={labelCls}>Images (comma separated paths)</label>
-            <textarea rows={2} className={inputCls} value={listValue(draft.images)} onChange={(e) => set('images', e.target.value.split(',').map((s) => s.trim()).filter(Boolean))} />
+            <label className={labelCls}>Primary Image</label>
+            <div className="flex items-center gap-3">
+              <input className={inputCls} flex-1 value={draft.images?.[0] ?? ''} onChange={(e) => set('images', [e.target.value, ...(draft.images?.slice(1) ?? [])])} />
+              <button type="button" onClick={() => onUpload('images' as keyof Product)} disabled={uploading === 'images'} className="inline-flex items-center gap-1.5 border border-brand-champagne px-3 py-2 text-xs tracking-widest hover:border-brand-gold disabled:opacity-50">
+                {uploading === 'images' ? 'UPLOADING…' : <><Upload className="h-3.5 w-3.5" /> UPLOAD</>}
+              </button>
+            </div>
+            {draft.images?.[0] && <div className="mt-1"><Image src={draft.images[0]} alt="Preview" width={80} height={80} className="rounded border border-brand-champagne" /></div>}
+          </div>
+          <div className="sm:col-span-2">
+            <label className={labelCls}>Gallery Images (comma separated paths)</label>
+            <textarea rows={2} className={inputCls} value={listValue(draft.images?.slice(1))} onChange={(e) => set('images', [draft.images?.[0] ?? '', ...e.target.value.split(',').map((s) => s.trim()).filter(Boolean)])} />
           </div>
           <div className="sm:col-span-2">
             <label className={labelCls}>Hover Image</label>
-            <input className={inputCls} value={draft.hover_image ?? ''} onChange={(e) => set('hover_image', e.target.value)} />
+            <div className="flex items-center gap-3">
+              <input className={inputCls} flex-1 value={draft.hover_image ?? ''} onChange={(e) => set('hover_image', e.target.value)} />
+              <button type="button" onClick={() => onUpload('hover_image' as keyof Product)} disabled={uploading === 'hover_image'} className="inline-flex items-center gap-1.5 border border-brand-champagne px-3 py-2 text-xs tracking-widest hover:border-brand-gold disabled:opacity-50">
+                {uploading === 'hover_image' ? 'UPLOADING…' : <><Upload className="h-3.5 w-3.5" /> UPLOAD</>}
+              </button>
+            </div>
+            {draft.hover_image && <div className="mt-1"><Image src={draft.hover_image} alt="Hover preview" width={80} height={80} className="rounded border border-brand-champagne" /></div>}
           </div>
 
           <div>
