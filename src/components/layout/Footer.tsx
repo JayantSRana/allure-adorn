@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Camera, MessageCircle, Mail } from 'lucide-react';
+import { Camera, MessageCircle, Mail, Globe } from 'lucide-react';
 import { DiamondMotif } from '@/components/store/DiamondMotif';
 
 const COLS = [
@@ -42,7 +42,6 @@ const COLS = [
 export default function Footer() {
   const whatsapp = '9115503135';
   const email = 'allureadorn1321@gmail.com';
-  const instagram = process.env.NEXT_PUBLIC_INSTAGRAM_HANDLE || 'allureadorn';
 
   return (
     <footer className="mt-24 bg-brand-burgundy text-white">
@@ -55,15 +54,24 @@ export default function Footer() {
               Adornment, made to be remembered. Timeless jewellery and home decor,
               crafted with quiet luxury.
             </p>
-            <div className="mt-6 flex gap-4">
+            <div className="mt-6 flex flex-wrap gap-4">
               <a
-                href={`https://instagram.com/${instagram}`}
+                href="https://www.instagram.com/allureadorn.in"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Instagram"
+                aria-label="Allure Adorn Instagram"
                 className="text-white/80 hover:text-brand-gold"
               >
                 <Camera className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.facebook.com/share/1CuP1DdFeg/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Allure Adorn Facebook"
+                className="text-white/80 hover:text-brand-gold"
+              >
+                <Globe className="h-5 w-5" />
               </a>
               <a
                 href={whatsapp ? `https://wa.me/${whatsapp}` : '/contact'}
@@ -77,6 +85,29 @@ export default function Footer() {
               <a href={`mailto:${email}`} aria-label="Email" className="text-white/80 hover:text-brand-gold">
                 <Mail className="h-5 w-5" />
               </a>
+            </div>
+            <div className="mt-6 pt-4 border-t border-white/15">
+              <h3 className="text-xs uppercase tracking-widest text-brand-gold">NAVIRA HOME DECOR</h3>
+              <div className="mt-3 flex gap-4">
+                <a
+                  href="https://www.instagram.com/navira.1321"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Navira Home Decor Instagram"
+                  className="text-white/80 hover:text-brand-gold"
+                >
+                  <Camera className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://www.facebook.com/share/1bNYqRzvHJ/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Navira Home Decor Facebook"
+                  className="text-white/80 hover:text-brand-gold"
+                >
+                  <Globe className="h-5 w-5" />
+                </a>
+              </div>
             </div>
           </div>
 
