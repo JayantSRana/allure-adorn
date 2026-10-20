@@ -54,7 +54,7 @@ export default function ProductDetail({ product }: { product: Product }) {
   const wished = hasWished(product.id);
 
   const off = discountPercent(product.price, product.compare_at_price);
-  const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
+  const whatsapp = '9115503135';
 
   const addLine = (goToCheckout = false) => {
     add({

@@ -40,7 +40,8 @@ const COLS = [
 ];
 
 export default function Footer() {
-  const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
+  const whatsapp = '9115503135';
+  const email = 'allureadorn1321@gmail.com';
   const instagram = process.env.NEXT_PUBLIC_INSTAGRAM_HANDLE || 'allureadorn';
 
   return (
@@ -73,7 +74,7 @@ export default function Footer() {
               >
                 <MessageCircle className="h-5 w-5" />
               </a>
-              <a href="mailto:orders@allureadorn.com" aria-label="Email" className="text-white/80 hover:text-brand-gold">
+              <a href={`mailto:${email}`} aria-label="Email" className="text-white/80 hover:text-brand-gold">
                 <Mail className="h-5 w-5" />
               </a>
             </div>
