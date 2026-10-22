@@ -1,0 +1,8 @@
+{
+  "name": "Allure Adorn | Luxury Jewellery & Home Decor",
+  "description": "Adornment, made to be remembered. Timeless jewellery and home decor, crafted with quiet luxury.",
+  "requestFeedback": false,
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

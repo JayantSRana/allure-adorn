@@ -15,6 +15,7 @@ import {
   ExternalLink,
   Inbox,
   LayoutTemplate,
+  FileSpreadsheet,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { logoutAdmin } from '@/app/admin/actions';
@@ -23,6 +24,7 @@ const NAV = [
   { href: '/admin', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/admin/content', label: 'Website & Sections', icon: LayoutTemplate },
   { href: '/admin/orders', label: 'Orders', icon: Receipt },
+  { href: '/admin/sheets', label: 'Google Sheets', icon: FileSpreadsheet },
   { href: '/admin/inbox', label: 'Inbox', icon: Inbox },
   { href: '/admin/products', label: 'Products', icon: Gem },
   { href: '/admin/collections', label: 'Collections', icon: FolderOpen },

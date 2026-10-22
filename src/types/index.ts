@@ -183,6 +183,9 @@ export interface SystemSettings {
   shipping_fee_flat: number;
   international_shipping_enabled: boolean;
   google_sheets_webhook_url?: string;
+  google_sheets_spreadsheet_id?: string;
+  google_sheets_spreadsheet_name?: string;
+  google_sheets_last_synced?: string;
   whatsapp_number?: string;
   instagram_handle?: string;
   announcement_bar_text?: string;
