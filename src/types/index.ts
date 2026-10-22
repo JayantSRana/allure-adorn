@@ -206,6 +206,89 @@ export interface Subscriber {
   created_at: string;
 }
 
+export type SectionType =
+  | 'HERO_SLIDESHOW'
+  | 'CATEGORY_SHOWCASE'
+  | 'NEW_ARRIVALS'
+  | 'BESTSELLERS'
+  | 'FEATURED_COLLECTION'
+  | 'BRAND_PROMISE'
+  | 'HOME_DECOR_SHOWCASE'
+  | 'PROMO_BANNER'
+  | 'CUSTOM_PRODUCT_GRID'
+  | 'INSTAGRAM_FEED'
+  | 'REVIEWS_SHOWCASE'
+  | 'SERVICE_STRIP'
+  | 'NEWSLETTER';
+
+export interface HeroSlideItem {
+  id: string;
+  image: string;
+  eyebrow: string;
+  headline: string;
+  sub: string;
+  primary_cta_text?: string;
+  primary_cta_href?: string;
+  secondary_cta_text?: string;
+  secondary_cta_href?: string;
+  is_active?: boolean;
+}
+
+export interface CategoryCardItem {
+  id: string;
+  label: string;
+  href: string;
+  tagline: string;
+  img: string;
+  is_active?: boolean;
+}
+
+export type ServiceIconName =
+  | 'Globe'
+  | 'Package'
+  | 'MousePointerClick'
+  | 'Headphones'
+  | 'ShieldCheck'
+  | 'Sparkles'
+  | 'Truck'
+  | 'Heart'
+  | 'Award';
+
+export interface ServiceBadgeItem {
+  id: string;
+  icon: ServiceIconName;
+  title: string;
+  text: string;
+  is_active?: boolean;
+}
+
+export interface HomepageSection {
+  id: string;
+  type: SectionType;
+  title: string;
+  subtitle?: string;
+  eyebrow?: string;
+  is_enabled: boolean;
+  order: number;
+  config: {
+    slides?: HeroSlideItem[];
+    category_cards?: CategoryCardItem[];
+    service_badges?: ServiceBadgeItem[];
+    limit?: number;
+    cta_text?: string;
+    cta_href?: string;
+    collection_id?: string;
+    body_text?: string;
+    image?: string;
+    theme?: 'ivory' | 'champagne' | 'burgundy' | 'charcoal';
+    badge_text?: string;
+    instagram_images?: string[];
+    instagram_url?: string;
+    filter_category?: ProductCategory;
+    product_ids?: string[];
+  };
+}
+
 export interface Database {
   products: Product[];
   collections: Collection[];
@@ -215,4 +298,6 @@ export interface Database {
   messages: ContactMessage[];
   subscribers: Subscriber[];
   settings: SystemSettings;
+  sections: HomepageSection[];
 }
+

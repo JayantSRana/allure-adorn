@@ -132,6 +132,12 @@ export default async function AdminDashboard({
           <h2 className="mb-4 font-serif text-xl">Quick Actions</h2>
           <ul className="space-y-3 text-sm">
             <li>
+              <Link href="/admin/content" className="flex items-center justify-between border border-brand-champagne px-4 py-3 hover:border-brand-gold">
+                <span>Customize Website & Homepage Sections</span>
+                <ArrowUpRight className="h-4 w-4 text-brand-gold" />
+              </Link>
+            </li>
+            <li>
               <Link href="/admin/orders" className="flex items-center justify-between border border-brand-champagne px-4 py-3 hover:border-brand-gold">
                 Manage orders ledger <ArrowUpRight className="h-4 w-4 text-brand-gold" />
               </Link>
@@ -154,3 +160,4 @@ export default async function AdminDashboard({
     </div>
   );
 }
+

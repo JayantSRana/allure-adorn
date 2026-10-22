@@ -1,5 +1,13 @@
 import { ensureDatabase } from './db';
-import { Product, Collection, Review, Order, ProductCategory } from '@/types';
+import {
+  Product,
+  Collection,
+  Review,
+  Order,
+  ProductCategory,
+  HomepageSection,
+} from '@/types';
+
 
 export function slugify(input: string): string {
   return input
@@ -206,3 +214,23 @@ export async function getProductRatingSummary(): Promise<
   }
   return summary;
 }
+
+/* ------------------------ Homepage Sections ------------------------ */
+
+export async function getHomepageSections(): Promise<HomepageSection[]> {
+  const db = await ensureDatabase();
+  return [...db.sections].sort((a, b) => a.order - b.order);
+}
+
+export async function getActiveHomepageSections(): Promise<HomepageSection[]> {
+  const sections = await getHomepageSections();
+  return sections.filter((s) => s.is_enabled);
+}
+
+export async function getCollectionById(
+  id: string,
+): Promise<Collection | null> {
+  const collections = await getCollections();
+  return collections.find((c) => c.id === id) ?? null;
+}
+

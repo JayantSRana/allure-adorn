@@ -14,12 +14,14 @@ import {
   LogOut,
   ExternalLink,
   Inbox,
+  LayoutTemplate,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { logoutAdmin } from '@/app/admin/actions';
 
 const NAV = [
   { href: '/admin', label: 'Dashboard', icon: LayoutDashboard },
+  { href: '/admin/content', label: 'Website & Sections', icon: LayoutTemplate },
   { href: '/admin/orders', label: 'Orders', icon: Receipt },
   { href: '/admin/inbox', label: 'Inbox', icon: Inbox },
   { href: '/admin/products', label: 'Products', icon: Gem },
@@ -29,6 +31,7 @@ const NAV = [
   { href: '/admin/discounts', label: 'Discounts & Fees', icon: Percent },
   { href: '/admin/settings', label: 'Settings', icon: Settings },
 ];
+
 
 export default function AdminNav() {
   const pathname = usePathname();

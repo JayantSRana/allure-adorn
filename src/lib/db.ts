@@ -1,5 +1,6 @@
 import { Database, SystemSettings } from '@/types';
 import { SEED_PRODUCTS, SEED_COLLECTIONS, SEED_REVIEWS } from './seed-catalog';
+import { SEED_SECTIONS } from './seed-sections';
 import fs from 'fs';
 import path from 'path';
 
@@ -34,6 +35,7 @@ export function freshDatabase(): Database {
     messages: [],
     subscribers: [],
     settings: { ...DEFAULT_SETTINGS },
+    sections: JSON.parse(JSON.stringify(SEED_SECTIONS)),
   };
 }
 
@@ -99,18 +101,23 @@ function withLock<T>(fn: () => Promise<T> | T): Promise<T> {
   return run;
 }
 
+function normaliseDatabase(parsed: Database): Database {
+  if (!Array.isArray(parsed.messages)) parsed.messages = [];
+  if (!Array.isArray(parsed.subscribers)) parsed.subscribers = [];
+  if (!Array.isArray(parsed.customers)) parsed.customers = [];
+  if (!Array.isArray(parsed.sections) || parsed.sections.length === 0) {
+    parsed.sections = JSON.parse(JSON.stringify(SEED_SECTIONS));
+  }
+  return parsed;
+}
+
 function readLocal(): Database | null {
   try {
     if (!fs.existsSync(DB_PATH)) return null;
     const raw = fs.readFileSync(DB_PATH, 'utf8');
     const parsed = JSON.parse(raw) as Database;
     if (!parsed.products || parsed.products.length === 0) return null;
-    // Normalise optional collections added after the first release so older
-    // database files keep working without a manual reset.
-    if (!Array.isArray(parsed.messages)) parsed.messages = [];
-    if (!Array.isArray(parsed.subscribers)) parsed.subscribers = [];
-    if (!Array.isArray(parsed.customers)) parsed.customers = [];
-    return parsed;
+    return normaliseDatabase(parsed);
   } catch {
     return null;
   }
@@ -133,8 +140,9 @@ function writeLocal(db: Database): void {
 export async function ensureDatabase(): Promise<Database> {
   const remote = await redisGet();
   if (remote && remote.products && remote.products.length > 0) {
-    writeLocal(remote);
-    return remote;
+    const norm = normaliseDatabase(remote);
+    writeLocal(norm);
+    return norm;
   }
   const local = readLocal();
   if (local) return local;
