@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { ensureDatabase, mutateDatabase } from '@/lib/db';
 import { broadcast } from '@/lib/realtime';
+import { syncOrderToGoogleSheets } from '@/lib/sheets';
 import { Order, OrderItem } from '@/types';
 import crypto from 'crypto';
 
@@ -49,6 +50,8 @@ export async function POST(req: Request) {
     body.payment_method === 'RAZORPAY_UPI' ? 'RAZORPAY_UPI' : 'COD';
   const paidNow = paymentMethod === 'RAZORPAY_UPI';
 
+  let googleSheetsWebhookUrl: string | undefined;
+
   const order = await mutateDatabase((db) => {
     const discountEnabled = db.settings.discount_enabled;
     const discount_percent = discountEnabled ? db.settings.discount_percent : 0;
@@ -60,6 +63,8 @@ export async function POST(req: Request) {
         ? 0
         : db.settings.shipping_fee_flat;
     const total_amount = afterDiscount + shipping_fee;
+
+    googleSheetsWebhookUrl = db.settings.google_sheets_webhook_url;
 
     const now = new Date().toISOString();
     const created: Order = {
@@ -120,10 +125,12 @@ export async function POST(req: Request) {
     return created;
   });
 
+  // Sync to Google Sheets in background
+  syncOrderToGoogleSheets(order, googleSheetsWebhookUrl).catch(() => {});
+
   broadcast('ORDER_CREATED', { id: order.id, order_number: order.order_number });
   if (paidNow)
     broadcast('ORDER_PAID', { id: order.id, order_number: order.order_number });
 
   return NextResponse.json({ order });
 }
-
