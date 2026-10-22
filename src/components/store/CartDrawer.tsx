@@ -73,13 +73,27 @@ export default function CartDrawer({
           </div>
         ) : (
           <>
-            <div className="border-b border-brand-champagne bg-brand-champagne/40 px-5 py-3 text-center text-xs">
+            <div className="border-b border-brand-champagne bg-brand-champagne/40 px-5 py-3.5 text-center text-xs">
               {remaining > 0 ? (
-                <>Add <strong>{formatINR(remaining)}</strong> more for free shipping.</>
+                <p>
+                  Add <strong className="text-brand-burgundy">{formatINR(remaining)}</strong> more for{' '}
+                  <span className="uppercase tracking-wider text-brand-gold">Free Shipping</span>
+                </p>
               ) : (
-                <span className="text-brand-burgundy">You&apos;ve unlocked free shipping ✦</span>
+                <span className="font-medium tracking-wider text-brand-burgundy">
+                  ✦ Complimentary Luxury Shipping Unlocked ✦
+                </span>
               )}
+              <div className="mt-2 h-1.5 w-full overflow-hidden bg-brand-champagne">
+                <div
+                  className="h-full bg-brand-gold transition-all duration-500"
+                  style={{
+                    width: `${Math.min(100, Math.round((subtotal / Math.max(1, freeShippingThreshold)) * 100))}%`,
+                  }}
+                />
+              </div>
             </div>
+
 
             <div className="flex-1 overflow-y-auto px-5 py-4">
               <ul className="space-y-4">

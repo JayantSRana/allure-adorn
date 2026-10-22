@@ -3,7 +3,9 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { HeroSlideItem } from '@/types';
+import { DiamondMotif } from '@/components/store/DiamondMotif';
 
 type Slide = Omit<HeroSlideItem, 'id'> & { id?: string };
 
@@ -29,48 +31,86 @@ export default function HeroSlideshow({ slides }: { slides: Slide[] }) {
   const secondaryText = slide.secondary_cta_text ?? 'EXPLORE BANGLES';
   const secondaryHref = slide.secondary_cta_href || '/bangles';
 
+  const prev = () =>
+    setI((n) => (n - 1 + activeSlides.length) % activeSlides.length);
+  const next = () => setI((n) => (n + 1) % activeSlides.length);
+
   return (
-    <section className="relative h-[78vh] min-h-[520px] w-full overflow-hidden bg-brand-champagne">
-      {activeSlides.map((s, idx) => (
-        <div
-          key={(s.id || s.image) + idx}
-          className={`absolute inset-0 transition-opacity duration-[1500ms] ease-in-out ${
-            idx === safeIndex ? 'opacity-100' : 'opacity-0'
-          }`}
-          aria-hidden={idx !== safeIndex}
-        >
-          <Image
-            src={s.image}
-            alt={s.headline}
-            fill
-            priority={idx === 0}
-            sizes="100vw"
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-charcoal/55 via-brand-charcoal/20 to-transparent" />
-        </div>
-      ))}
+    <section className="group relative h-[82vh] min-h-[540px] w-full overflow-hidden bg-brand-charcoal">
+      {activeSlides.map((s, idx) => {
+        const isCurrent = idx === safeIndex;
+        return (
+          <div
+            key={(s.id || s.image) + idx}
+            className={`absolute inset-0 transition-opacity duration-[1400ms] ease-in-out ${
+              isCurrent ? 'opacity-100' : 'opacity-0'
+            }`}
+            aria-hidden={!isCurrent}
+          >
+            <Image
+              src={s.image}
+              alt={s.headline}
+              fill
+              priority={idx === 0}
+              sizes="100vw"
+              className={`object-cover transition-transform duration-[7000ms] ease-out ${
+                isCurrent ? 'scale-105' : 'scale-100'
+              }`}
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-brand-charcoal/70 via-brand-charcoal/35 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/50 via-transparent to-transparent" />
+          </div>
+        );
+      })}
+
+      {/* Prev / Next Navigation Arrows */}
+      {activeSlides.length > 1 ? (
+        <>
+          <button
+            type="button"
+            onClick={prev}
+            aria-label="Previous slide"
+            className="absolute left-4 top-1/2 z-20 hidden -translate-y-1/2 border border-white/25 bg-brand-charcoal/30 p-3 text-white/80 backdrop-blur-xs transition hover:border-brand-gold hover:bg-brand-burgundy hover:text-white md:flex"
+          >
+            <ChevronLeft className="h-5 w-5" />
+          </button>
+          <button
+            type="button"
+            onClick={next}
+            aria-label="Next slide"
+            className="absolute right-4 top-1/2 z-20 hidden -translate-y-1/2 border border-white/25 bg-brand-charcoal/30 p-3 text-white/80 backdrop-blur-xs transition hover:border-brand-gold hover:bg-brand-burgundy hover:text-white md:flex"
+          >
+            <ChevronRight className="h-5 w-5" />
+          </button>
+        </>
+      ) : null}
 
       <div className="relative z-10 mx-auto flex h-full max-w-7xl items-center px-4 sm:px-6 lg:px-8">
-        <div className="max-w-xl text-white">
-          {slide.eyebrow ? (
-            <p className="mb-4 text-[11px] uppercase tracking-[0.4em] text-brand-gold">
-              {slide.eyebrow}
-            </p>
-          ) : null}
-          <h1 className="font-serif text-4xl font-light leading-tight sm:text-6xl">
+        <div className="max-w-2xl text-white">
+          <div className="mb-3 flex items-center gap-3">
+            <DiamondMotif count={3} className="text-xs" />
+            {slide.eyebrow ? (
+              <p className="text-[11px] uppercase tracking-[0.42em] text-brand-gold">
+                {slide.eyebrow}
+              </p>
+            ) : null}
+          </div>
+
+          <h1 className="font-serif text-4xl font-light leading-[1.12] tracking-wide sm:text-6xl lg:text-[64px]">
             {slide.headline}
           </h1>
+
           {slide.sub ? (
-            <p className="mt-5 max-w-md text-sm text-white/85 sm:text-base">
+            <p className="mt-5 max-w-lg text-sm leading-relaxed text-white/85 sm:text-base">
               {slide.sub}
             </p>
           ) : null}
-          <div className="mt-8 flex flex-wrap gap-3">
+
+          <div className="mt-9 flex flex-wrap gap-4">
             {primaryText ? (
               <Link
                 href={primaryHref}
-                className="bg-brand-burgundy px-8 py-3.5 text-xs tracking-widest text-white transition hover:bg-brand-charcoal"
+                className="border border-brand-burgundy bg-brand-burgundy px-9 py-4 text-xs tracking-[0.22em] text-white shadow-lg transition duration-300 hover:border-brand-gold hover:bg-brand-charcoal"
               >
                 {primaryText}
               </Link>
@@ -78,7 +118,7 @@ export default function HeroSlideshow({ slides }: { slides: Slide[] }) {
             {secondaryText ? (
               <Link
                 href={secondaryHref}
-                className="border border-white/70 px-8 py-3.5 text-xs tracking-widest text-white transition hover:bg-white hover:text-brand-charcoal"
+                className="border border-white/75 bg-white/5 px-9 py-4 text-xs tracking-[0.22em] text-white backdrop-blur-xs transition duration-300 hover:border-white hover:bg-white hover:text-brand-charcoal"
               >
                 {secondaryText}
               </Link>
@@ -87,15 +127,18 @@ export default function HeroSlideshow({ slides }: { slides: Slide[] }) {
         </div>
       </div>
 
+      {/* Slide Indicators */}
       {activeSlides.length > 1 ? (
-        <div className="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 gap-2">
+        <div className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 items-center gap-2.5">
           {activeSlides.map((_, idx) => (
             <button
               key={idx}
               onClick={() => setI(idx)}
               aria-label={`Go to slide ${idx + 1}`}
-              className={`h-1.5 transition-all ${
-                idx === safeIndex ? 'w-8 bg-brand-gold' : 'w-4 bg-white/50'
+              className={`h-1.5 transition-all duration-500 ${
+                idx === safeIndex
+                  ? 'w-10 bg-brand-gold'
+                  : 'w-4 bg-white/45 hover:bg-white/80'
               }`}
             />
           ))}
@@ -104,4 +147,3 @@ export default function HeroSlideshow({ slides }: { slides: Slide[] }) {
     </section>
   );
 }
-

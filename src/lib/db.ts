@@ -63,7 +63,15 @@ async function redisGet(): Promise<Database | null> {
     if (!res.ok) return null;
     const json = (await res.json()) as { result?: string | null };
     if (!json.result) return null;
-    return JSON.parse(json.result) as Database;
+    let data: unknown = JSON.parse(json.result);
+    if (typeof data === 'string') {
+      try {
+        data = JSON.parse(data);
+      } catch {
+        // ignore
+      }
+    }
+    return data as Database;
   } catch {
     return null;
   }
@@ -79,7 +87,7 @@ async function redisSet(db: Database): Promise<void> {
         Authorization: `Bearer ${cfg.token}`,
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(JSON.stringify(db)),
+      body: JSON.stringify(db),
     });
   } catch {
     // best-effort; local file remains the fallback
